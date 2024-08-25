@@ -1,0 +1,1 @@
+print('Fui importado __init__.py')
