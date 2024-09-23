@@ -1,0 +1,9 @@
+1) Como obter a data e hora atual?  from datetime import datetime <br> agora = datetime.now() <br><br> data = agora.date() <br> horario = agora.time() <br><br> agora.year <br> agora.month <br> agora.day <br> agora.hour <br> agora.minute <br> agora.second <br> agora.microsecond
+
+2) Como obter somente a data? from datetime import date <br> agora = date.today()
+
+3) Como somar ou subtrair datas e horários? from datetime import timedelta <br> data_horario +- timedelta(days = x) <br> weeks, days, hours, minutes, seconds, microseconds, milliseconds
+
+4) Como construir um objeto datetime? datetime(ano, mes, dia, hora, minuto, segundo, microssegundo)
+
+Como colocar uma string no formato datetime? datetime.fromisoformat("2023-06-26 15:30:20")

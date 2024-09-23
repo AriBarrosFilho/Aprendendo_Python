@@ -1,5 +1,9 @@
 import textwrap
 
+from datetime import datetime
+import pytz
+from random import randint
+
 class Venda:
     """
     A classe Venda representa uma venda de um produto, contendo informações como ID do produto, 
@@ -111,10 +115,6 @@ class Cliente:
             total += compra
         return total
 
-
-from datetime import datetime
-import pytz
-from random import randint
 
 class ContaBancaria:
 
@@ -257,7 +257,12 @@ class Agencia:
 
 
 class AgenciaVirtual(Agencia):
-    pass
+    
+    def __init__(self, site, telefone, cnpj):
+        self.site = site
+        super().__init__(telefone, cnpj, "1001")
+        # Caso você queira colocar um outro valor para uma variável mãe na filha, coloque depois do super
+        self.caixa = 10
 
 
 class AgenciaComum(Agencia):
@@ -265,14 +270,19 @@ class AgenciaComum(Agencia):
 
 
 class AgenciaPremium(Agencia):
+
+    def __init__(self, telefone, cnpj, numero) -> None:
+        super().__init__(telefone, cnpj, numero)
+
+    def cadastrar_cliente(self, nome, cpf, patrimonio):
+        if patrimonio > 100_000:
+            super().cadastrar_cliente(nome, cpf, patrimonio)
+        else:
+            print("O cliente é pobre, saida daqui!!!")
+
     pass
 
 
 
-
-
-
-
-
-
-
+if __name__ == "__main__":
+    print("Isso só será mostrado se for executado dentro desse arquivo.")
