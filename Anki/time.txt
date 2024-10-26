@@ -24,3 +24,4 @@
 024) Como deixar os nomes dos meses e dos dias da semana em português?	import locale <br> locale.setlocale(locale.LC_TIME, 'pt_BR.UTF-8')
 025) Como transformar uma string para o formato struct_time?	string_tempo = "30 Junho, 2023" <br> formato = "%d %B, %Y" <br> tempo_em_struct = time.strptime(string_tempo, formato)
 026) Como saber quantos segundos se passaram a partir do marco zero com base em uma data e hora?	tempo_em_struct = time.localtime() <br> tempo_em_segundos = time.mktime(tempo_em_struct) <br><br> tempo_em_segundos = time.mktime((2023, 1, 1, 0, 0, 0, 0, 0, 0))
+027) Qual símbolo é esse na função time.strftime()? %U	Número da semana no ano [00, 53]

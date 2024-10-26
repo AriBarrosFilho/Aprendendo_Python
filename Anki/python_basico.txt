@@ -1,0 +1,4 @@
+001) Com instalar as bibliotecas do requirements.txt?	pip install -r requirements.
+002) Como criar um arquivo de requirements.txt com base nas bibliotecas do ambiente atual?	<strong>pip freeze > requirements.txt</strong> <br> Cria uma lista com os pacotes instalados (pacotes mais relevantes) e suas respectivas versões <br> <br> <strong>pip list --format=freeze > requirements.txt</strong> <br> Cria uma lista com os pacotes instalados (inclusive pacotes em modo de desenvolvimento) e suas respectivas versões
+003) Como ler um arquivo .txt?	with open(file_path, 'r') as file: <br> texto = file.read()
+004) Como escrever um arquivo .txt?	with open(file_path, 'w') as file: <br> file.write(content)
