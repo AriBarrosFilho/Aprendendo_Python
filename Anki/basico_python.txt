@@ -1,3 +1,0 @@
-001) Como criar um ambiente virtual?	<b>python -m venv <u>nome do ambiente virtual</u></b>
-002) Como ativar um ambiente virtual?	<b>.\<u>nome do ambiente virtual</u>\Scripts\activate</b>
-003) Como desativar um ambiente virtual?	<b>deactivate</b>

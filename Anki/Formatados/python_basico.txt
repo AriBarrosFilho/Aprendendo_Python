@@ -2,3 +2,6 @@
 002) Como criar um arquivo de requirements.txt com base nas bibliotecas do ambiente atual?	<strong>pip freeze > requirements.txt</strong> <br> Cria uma lista com os pacotes instalados (pacotes mais relevantes) e suas respectivas versões <br> <br> <strong>pip list --format=freeze > requirements.txt</strong> <br> Cria uma lista com os pacotes instalados (inclusive pacotes em modo de desenvolvimento) e suas respectivas versões
 003) Como ler um arquivo .txt?	with open(file_path, 'r') as file: <br> texto = file.read()
 004) Como escrever um arquivo .txt?	with open(file_path, 'w') as file: <br> file.write(content)
+005) Como criar um ambiente virtual?	<b>python -m venv <u>nome do ambiente virtual</u></b>
+006) Como ativar um ambiente virtual?	<b>.\<u>nome do ambiente virtual</u>\Scripts\activate</b> <br><br> Também deve ser selecionado o kernel na parte superior direita da tela
+007) Como desativar um ambiente virtual?	<b>deactivate</b>
