@@ -1,27 +1,10 @@
-001) Qual o marco zero (epoch) da biblioteca time?	01/01/1970 00:00:00
-002) Como calcular a quantidade de segundos desde o marco zero (epoch)?	time.time() <br><br> É uma função muito útil para sabermos o tempo que um certo trecho de código demora para ser executado.
-003) Como fazer o programa ficar pausado em uma certa linha por <u>x</u> segundos?	time.sleep(<u>quantidade de segundos</u>)
-004) Como mostrar a data e a hora atual local?	time.ctime() <br><br> time.ctime(<u>quantidade de segundos</u>) Apresenta a data e a hora com base na quantidade segundos depois de 01/01/1970 00:00:00
-005) O que faz a função <b>time.gmtime()</b>?	Retorna uma estrutura do tipo struct_time, que é uma tupla contendo todas as informações sobre data e horário do ponto em relação ao UTC/GMT. <br><br> <b>time.gmtime(<u>quantidade de segundos</u>)</b>, retorna uma estrutura do tipo struct_time com base na quantidade de segundos após 01/01/1970 00:00:00
-006) Como retornar uma estrutura do tipo struct_time, porém com base no horário local?	time.localtime()
-007) Como acessar os dados de um variável do tipo struct_time?	Através da sua posição ou seu nome, exemplo: agora = time.localtime(), ano = agora[0], ano = agora.tm_year
-008) Como personalizar a estrutura de data e hora?	Utilizando a função time.strftime(<u>estrutura desejada</u>, <u>variável em struct_time</u>) <br><br> Exemplo: <br> agora = time.localtime() <br> agora_personalizado = time.strftime(%d %B % Y, agora)
-009) Qual símbolo é esse na função time.strftime() %d?	dia do mês [1, 31] <br>
-010) Qual símbolo é esse na função time.strftime() %b?	Nome completo do mês <br>
-011) Qual símbolo é esse na função time.strftime() %b?	Nome abreviado do mês <br>
-012) Qual símbolo é esse na função time.strftime() %m?	Número do mês [1, 12] <br>
-013) Qual símbolo é esse na função time.strftime() %y?	Número do ano <br>
-014) Qual símbolo é esse na função time.strftime() %y?	Número final do ano [00,99]
-015) Qual símbolo é esse na função time.strftime() %h?	Hora [0, 23] <br>
-016) Qual símbolo é esse na função time.strftime() %i?	Hora [1, 12] <br>
-017) Qual símbolo é esse na função time.strftime() %m?	Minutos <br> [0, 59]
-018) Qual símbolo é esse na função time.strftime() %s?	Segundos <br> [0, 59]
-019) Qual símbolo é esse na função time.strftime() %a?	Nome do dia da semana abreviado
-020) Qual símbolo é esse na função time.strftime() %a?	Nome do dia da semana completo
-021) Qual símbolo é esse na função time.strftime() %j?	Dia do ano [1,366]
-022) Qual símbolo é esse na função time.strftime() %p?	AM ou PM
-023) Qual símbolo é esse na função time.strftime() %w?	Weekday as a decimal number [0(Sunday),6]
-024) Como deixar os nomes dos meses e dos dias da semana em português?	import locale <br> locale.setlocale(locale.LC_TIME, 'pt_BR.UTF-8')
-025) Como transformar uma string para o formato struct_time?	string_tempo = "30 Junho, 2023" <br> formato = "%d %B, %Y" <br> tempo_em_struct = time.strptime(string_tempo, formato)
-026) Como saber quantos segundos se passaram a partir do marco zero com base em uma data e hora?	tempo_em_struct = time.localtime() <br> tempo_em_segundos = time.mktime(tempo_em_struct) <br><br> tempo_em_segundos = time.mktime((2023, 1, 1, 0, 0, 0, 0, 0, 0))
-027) %U Qual símbolo é esse na função time.strftime() ?		Número da semana no ano [00, 53]
+Como retornar um sequência aleatória de x bytes no formato de bytes com o random? random.randbytes(x)
+Para que serve a função random.getstate()? Retorna uma tupla de dados que foram utilizados para gerar o número aleatório naquele momento.
+Para que serve a função random.setstate(state)? Utiliza os dados de random.getstate() para definir uma semente.
+Como criar uma semente para valores aleatórios na biblioteca random? random.seed() <br><br> Só funciona para a célula atual.
+Como misturar os elementos de uma lista com o random? random.shuffle(lista)
+Como gerar valores aleatórios inteiros com o random? random.randint(valor mínimo, valor máximo inclusive) <br><br> random.randrange(valor mínimo, valor máximo inclusive, passo)
+Como escolher um elemento aleatório de uma lista usando o random? random.choice(lista)
+Como escolher uma lista de tamanho n, com elementos aleatório de outra lista com reposição? random.choices(population = lista, k = n) <br><br> weights: É uma lista de mesmo tamanho que a lista base, indicando o peso de cada elemento para ser selecionado
+Como escolher uma lista de tamanho n, com elementos aleatório de outra lista sem reposição? random.sample(population = lista, k = n)
+Como gerar valores aleatórios entre 0 e 1 usando random? random.random()
