@@ -4,4 +4,8 @@
 004) Como saber quantos elementos têm em um array numpy?	<u>seu array</u>.size
 005) Como saber quantas dimensões tem em um array numpy?	<u>seu array</u>.ndim
 006) Como saber o formato de um array numpy?	<u>seu array</u>.shape
-007) Como somar todos os elementos de um array numpy?	np.sum(<u>seu array</u>) <br> <u>seu array</u>sum()
+007) Como somar todos os elementos de um array numpy?	np.sum(<u>seu array</u>) <br> <u>seu array</u>.sum() <br><br> axis: Eixo onde será somado <br> dytpe: tipo de cada elemento no final <br> keepdims: Manter ou não as dimensões <br> initial: Adiciona mais esse valor
+008) Como selecionar elementos, linhas e colunas específicas em uma matriz do numpy?	
+009) Como obter as posições em um array que satisfazem uma determinada condição?	np.where(seu_array + condição)
+010) Como obter os elementos em um array que satisfazem uma determinada condição?	seu_array[seu_array + condição] <br><br> seu_array[np.where(seu_array + condição)]
+011) O que acontece quando você coloca um array e uma condição juntos de forma isolada?	Retorna outro array com os elementos sendo True ou False dependendo se satisfez a condição ou não

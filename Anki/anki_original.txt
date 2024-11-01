@@ -1,10 +1,11 @@
-Como retornar um sequência aleatória de x bytes no formato de bytes com o random? random.randbytes(x)
-Para que serve a função random.getstate()? Retorna uma tupla de dados que foram utilizados para gerar o número aleatório naquele momento.
-Para que serve a função random.setstate(state)? Utiliza os dados de random.getstate() para definir uma semente.
-Como criar uma semente para valores aleatórios na biblioteca random? random.seed() <br><br> Só funciona para a célula atual.
-Como misturar os elementos de uma lista com o random? random.shuffle(lista)
-Como gerar valores aleatórios inteiros com o random? random.randint(valor mínimo, valor máximo inclusive) <br><br> random.randrange(valor mínimo, valor máximo inclusive, passo)
-Como escolher um elemento aleatório de uma lista usando o random? random.choice(lista)
-Como escolher uma lista de tamanho n, com elementos aleatório de outra lista com reposição? random.choices(population = lista, k = n) <br><br> weights: É uma lista de mesmo tamanho que a lista base, indicando o peso de cada elemento para ser selecionado
-Como escolher uma lista de tamanho n, com elementos aleatório de outra lista sem reposição? random.sample(population = lista, k = n)
-Como gerar valores aleatórios entre 0 e 1 usando random? random.random()
+001) Qual é a diferença entre array e lista?	Velocidade no processamento dos cálculos <br> Generalização dos elementos <br> Facilidade nos cálculos matemáticos
+002) Como saber o tipo de elemento numpy?	<u>seu array</u>.dtype
+003) Como saber o tamanho em bytes de um elemento numpy?	<u>seu array</u>.itemsize
+004) Como saber quantos elementos têm em um array numpy?	<u>seu array</u>.size
+005) Como saber quantas dimensões tem em um array numpy?	<u>seu array</u>.ndim
+006) Como saber o formato de um array numpy?	<u>seu array</u>.shape
+007) Como somar todos os elementos de um array numpy?	np.sum(<u>seu array</u>) <br> <u>seu array</u>.sum() <br><br> axis: Eixo onde será somado <br> dytpe: tipo de cada elemento no final <br> keepdims: Manter ou não as dimensões <br> initial: Adiciona mais esse valor
+Como selecionar elementos, linhas e colunas específicas em uma matriz do numpy?
+Como obter as posições em um array que satisfazem uma determinada condição? np.where(seu_array + condição)
+Como obter os elementos em um array que satisfazem uma determinada condição? seu_array[seu_array + condição] <br><br> seu_array[np.where(seu_array + condição)]
+O que acontece quando você coloca um array e uma condição juntos de forma isolada? Retorna outro array com os elementos sendo True ou False dependendo se satisfez a condição ou não
