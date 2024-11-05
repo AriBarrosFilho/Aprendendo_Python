@@ -1,11 +1,18 @@
-001) Qual é a diferença entre array e lista?	Velocidade no processamento dos cálculos <br> Generalização dos elementos <br> Facilidade nos cálculos matemáticos
-002) Como saber o tipo de elemento numpy?	<u>seu array</u>.dtype
-003) Como saber o tamanho em bytes de um elemento numpy?	<u>seu array</u>.itemsize
-004) Como saber quantos elementos têm em um array numpy?	<u>seu array</u>.size
-005) Como saber quantas dimensões tem em um array numpy?	<u>seu array</u>.ndim
-006) Como saber o formato de um array numpy?	<u>seu array</u>.shape
-007) Como somar todos os elementos de um array numpy?	np.sum(<u>seu array</u>) <br> <u>seu array</u>.sum() <br><br> axis: Eixo onde será somado <br> dytpe: tipo de cada elemento no final <br> keepdims: Manter ou não as dimensões <br> initial: Adiciona mais esse valor
-008) Como selecionar elementos, linhas e colunas específicas em uma matriz do numpy?	
-009) Como obter as posições em um array que satisfazem uma determinada condição?	np.where(seu_array + condição)
-010) Como obter os elementos em um array que satisfazem uma determinada condição?	seu_array[seu_array + condição] <br><br> seu_array[np.where(seu_array + condição)]
-011) O que acontece quando você coloca um array e uma condição juntos de forma isolada?	Retorna outro array com os elementos sendo True ou False dependendo se satisfez a condição ou não
+001) Com instalar as bibliotecas do requirements.txt?	pip install -r requirements.
+002) Como criar um arquivo de requirements.txt com base nas bibliotecas do ambiente atual?	<strong>pip freeze > requirements.txt</strong> <br> Cria uma lista com os pacotes instalados (pacotes mais relevantes) e suas respectivas versões <br> <br> <strong>pip list --format=freeze > requirements.txt</strong> <br> Cria uma lista com os pacotes instalados (inclusive pacotes em modo de desenvolvimento) e suas respectivas versões
+003) Como ler um arquivo .txt?	with open(file_path, 'r') as file: <br> texto = file.read()
+004) Como escrever um arquivo .txt?	with open(file_path, 'w') as file: <br> file.write(content)
+005) Como criar um ambiente virtual?	<b>python -m venv <u>nome do ambiente virtual</u></b>
+006) Como ativar um ambiente virtual?	<b>.\<u>nome do ambiente virtual</u>\Scripts\activate</b> <br><br> Também deve ser selecionado o kernel na parte superior direita da tela
+007) Como desativar um ambiente virtual?	<b>deactivate</b>
+008) Quais são os dois principais parâmetros do print?	<strong>sep</strong> que por padrão é <u>" "</u> <br><br> <strong>end</strong> que por padrão é <u>\n</u>
+009) Qual é o caractere especial do python que pula linha?	\n
+010) Qual é o caractere especial do python que faz uma tabulação?	\t
+011) Qual é o caractere especial do python que cria uma barra invertida?	\\
+012) Qual é o caractere especial do python que cria uma aspas simples?	\'
+013) Qual é o caractere especial do python que pula uma aspas dupla?	\"
+014) Qual é o caractere especial do python que dá um backspace?	\b
+015) Qual é o caractere especial do python que retorna para o início da string e sobrepõe o que já existe?	\r
+016) Como transformar duas ou mais listas em uma lista de tuplas?	list(zip(lista_1, lista_2,...,lista_n))
+017) Como compactar e descompactar listas usando zip?	Compactar => zip(lista_1, lista_2,...,lista_n) <br><br> lista_1, lista_2,...,lista_n = zip(*arquivo_zipado)
+018) Como iterar sobre múltiplas listas usando zip?	for num, letra in zip(lista1, lista2):

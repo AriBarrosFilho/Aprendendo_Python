@@ -5,7 +5,7 @@
 005) Como criar um ambiente virtual?	<b>python -m venv <u>nome do ambiente virtual</u></b>
 006) Como ativar um ambiente virtual?	<b>.\<u>nome do ambiente virtual</u>\Scripts\activate</b> <br><br> Também deve ser selecionado o kernel na parte superior direita da tela
 007) Como desativar um ambiente virtual?	<b>deactivate</b>
-008) Quais são os dois principais parâmetros do print?	<strong>sep</strong> que por padrão é <u>,</u> <br><br <strong>end</strong> que por padrão é <u>\n</u>
+008) Quais são os dois principais parâmetros do print?	<strong>sep</strong> que por padrão é <u>" "</u> <br><br> <strong>end</strong> que por padrão é <u>\n</u>
 009) Qual é o caractere especial do python que pula linha?	\n
 010) Qual é o caractere especial do python que faz uma tabulação?	\t
 011) Qual é o caractere especial do python que cria uma barra invertida?	\\
@@ -13,3 +13,6 @@
 013) Qual é o caractere especial do python que pula uma aspas dupla?	\"
 014) Qual é o caractere especial do python que dá um backspace?	\b
 015) Qual é o caractere especial do python que retorna para o início da string e sobrepõe o que já existe?	\r
+016) Como transformar duas ou mais listas em uma lista de tuplas?	list(zip(lista_1, lista_2,...,lista_n))
+017) Como compactar e descompactar listas usando zip?	Compactar => zip(lista_1, lista_2,...,lista_n) <br><br> lista_1, lista_2,...,lista_n = zip(*arquivo_zipado)
+018) Como iterar sobre múltiplas listas usando zip?	for num, letra in zip(lista1, lista2):
