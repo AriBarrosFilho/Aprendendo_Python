@@ -16,3 +16,10 @@
 016) Como transformar duas ou mais listas em uma lista de tuplas?	list(zip(lista_1, lista_2,...,lista_n))
 017) Como compactar e descompactar listas usando zip?	Compactar => zip(lista_1, lista_2,...,lista_n) <br><br> lista_1, lista_2,...,lista_n = zip(*arquivo_zipado)
 018) Como iterar sobre múltiplas listas usando zip?	for num, letra in zip(lista1, lista2):
+019) Como instalar várias bibliotecas de uma vez sem informar suas versões?	pip install pandas numpy matplotlib
+020) Como instalar várias bibliotecas de uma vez informando as suas versões?	pip install scipy==1.13.0 tensorflow==2.17.0 tf-keras==2.17.0
+021) Como desinstalar uma biblioteca ou várias de uma única vez no python?	pip uninstall pandas numpy matplotlib
+022) Como mostrar a versão de uma ou mais bibliotecas?	pip show pandas numpy matplotlib <br><br> import pandas as pd <br> print(pd.__version__)
+023) Como mostrar todas as bibliotecas instaladas no python e suas respectivas versões?	pip list
+024) Como apresentar problemas de compatibilidade entre bibliotecas no python?	pip check
+025) Como atualizar uma biblioteca no python?	pip install --upgrade nome_da_biblioteca

@@ -1,18 +1,5 @@
-001) Com instalar as bibliotecas do requirements.txt?	pip install -r requirements.
-002) Como criar um arquivo de requirements.txt com base nas bibliotecas do ambiente atual?	<strong>pip freeze > requirements.txt</strong> <br> Cria uma lista com os pacotes instalados (pacotes mais relevantes) e suas respectivas versões <br> <br> <strong>pip list --format=freeze > requirements.txt</strong> <br> Cria uma lista com os pacotes instalados (inclusive pacotes em modo de desenvolvimento) e suas respectivas versões
-003) Como ler um arquivo .txt?	with open(file_path, 'r') as file: <br> texto = file.read()
-004) Como escrever um arquivo .txt?	with open(file_path, 'w') as file: <br> file.write(content)
-005) Como criar um ambiente virtual?	<b>python -m venv <u>nome do ambiente virtual</u></b>
-006) Como ativar um ambiente virtual?	<b>.\<u>nome do ambiente virtual</u>\Scripts\activate</b> <br><br> Também deve ser selecionado o kernel na parte superior direita da tela
-007) Como desativar um ambiente virtual?	<b>deactivate</b>
-008) Quais são os dois principais parâmetros do print?	<strong>sep</strong> que por padrão é <u>" "</u> <br><br> <strong>end</strong> que por padrão é <u>\n</u>
-009) Qual é o caractere especial do python que pula linha?	\n
-010) Qual é o caractere especial do python que faz uma tabulação?	\t
-011) Qual é o caractere especial do python que cria uma barra invertida?	\\
-012) Qual é o caractere especial do python que cria uma aspas simples?	\'
-013) Qual é o caractere especial do python que pula uma aspas dupla?	\"
-014) Qual é o caractere especial do python que dá um backspace?	\b
-015) Qual é o caractere especial do python que retorna para o início da string e sobrepõe o que já existe?	\r
-Como transformar duas ou mais listas em uma lista de tuplas? list(zip(lista_1, lista_2,...,lista_n))
-Como compactar e descompactar listas usando zip? Compactar => zip(lista_1, lista_2,...,lista_n) <br><br> lista_1, lista_2,...,lista_n = zip(*arquivo_zipado)
-Como iterar sobre múltiplas listas usando zip? for num, letra in zip(lista1, lista2):
+Como renomear uma ou mais colunas de um dataframe no pandas? df = df.rename(columns={'A': 'Coluna1', 'B': 'Coluna2'}) <br><br> df.columns = ['Coluna1', 'Coluna2']
+Como alterar a ordem das colunas em um dataframe do pandas? new_order = ['B', 'A', 'C'] <br> df = df[new_order]
+Como obter uma lista dos nomes das colunas de um dataframe no pandas? list(df.columns)
+Como obter uma lista com os índices de um dataframe no pandas? list(df.index)
+Como obter uma lista com os nomes das colunas que sejam de um mais tipos no dataframe do pandas? df.select_dtypes(include = 'int').columns <br><br> df.select_dtypes(include = ['float', 'int']).columns

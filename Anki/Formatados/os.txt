@@ -3,7 +3,7 @@
 003) Como verificar se um arquivo ou pasta existe?	os.path.exists(novo_diretorio)
 004) Como criar um novo diretório?	os.mkdir(novo_diretorio)
 005) Como renomear um diretório?	os.rename(nome_antigo, nome_novo)
-006) Como remover uma pasta vazia?	os.rmdir(diretorio) <br> <br> O diretório precisa estar vazio
+006) Como remover uma pasta vazia?	os.rmdir(diretorio) <br><br> O diretório precisa estar vazio
 007) Como remover um arquivo?	os.remove(diretorio_arquivo)
 008) Como obter o caminho absoluto de um arquivo?	os.path.abspath(caminho_relativo)
 009) Como dividir em caminho do diretório e arquivo?	diretorio, arquivo = os.path.split(caminho_absoluto)
