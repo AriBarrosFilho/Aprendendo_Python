@@ -4,8 +4,29 @@
 004) Como saber quantos elementos têm em um array numpy?	<u>seu array</u>.size
 005) Como saber quantas dimensões tem em um array numpy?	<u>seu array</u>.ndim
 006) Como saber o formato de um array numpy?	<u>seu array</u>.shape
-007) Como somar todos os elementos de um array numpy?	np.sum(<u>seu array</u>) <br> <u>seu array</u>.sum() <br><br> axis: Eixo onde será somado <br> dtype: tipo de cada elemento no final <br> keepdims: Manter ou não as dimensões <br> initial: Adiciona mais esse valor
+007) Como somar todos os elementos de um array numpy?	np.sum(<u>seu array</u>) <br> <u>seu array</u>.sum() <br><br> a: array ou lista <br> axis: Eixo onde será somado <br> dtype: tipo de cada elemento no final <br> keepdims: Manter ou não as dimensões <br> initial: Adiciona mais esse valor
 008) Como selecionar elementos, linhas e colunas específicas em uma matriz do numpy?	
 009) Como obter as posições em um array que satisfazem uma determinada condição?	np.where(seu_array + condição)
 010) Como obter os elementos em um array que satisfazem uma determinada condição?	seu_array[seu_array + condição] <br><br> seu_array[np.where(seu_array + condição)]
 011) O que acontece quando você coloca um array e uma condição juntos de forma isolada?	Retorna outro array com os elementos sendo True ou False dependendo se satisfez a condição ou não
+012) Como fazer a média de todos os elementos de um array numpy?	np.mean(<u>seu array</u>) <br> <u>seu array</u>.mean() <br><br> a: array ou lista <br> axis: Eixo onde será somado <br> dtype: tipo de cada elemento no final <br> keepdims: Manter ou não as dimensões <br> initial: Adiciona mais esse valor
+013) Como pegar o valor máximo de uma matriz do numpy?	np.max(<u>seu array</u>) <br> <u>seu array</u>.max() <br><br> a: array ou lista <br> axis: Eixo onde será somado <br> dtype: tipo de cada elemento no final <br> keepdims: Manter ou não as dimensões <br> initial: Adiciona mais esse valor
+014) Como pegar o valor mínimo de uma matriz do numpy?	np.min(<u>seu array</u>) <br> <u>seu array</u>.min() <br><br> a: array ou lista <br> axis: Eixo onde será somado <br> dtype: tipo de cada elemento no final <br> keepdims: Manter ou não as dimensões <br> initial: Adiciona mais esse valor
+015) Como ordenar uma matriz no numpy?	np.sort(a = matriz, axis = -1)
+016) Como realizar o produto escalar entre duas matrizes?	np.dot(a = vetor_1, b = vetor_2) <br><br> vetor_1 @ vetor_2
+017) Qual é a forma correta de criar um gerador de números aleatórios no numpy?	rng = np.random.default_rng(seed = None)
+018) Quais são os métodos da melhor gerador de números aleatórios no numpy e explique como funciona e seus métodos?	rng.random(size = (3,3)) <br> Gera valores de 0 a 1 <br><br> rng.integers(low = 1, high = 101, size = (5, 5)) <br> Gera valores inteiros <br><br> rng.binomial(p = (5/6), n = 3, size = 1000) <br> Probabilidade de uma distribuição binomial <br><br> rng.uniform(low = 1.3, high = 1.5, size = (5, 5)) <br> Gera valor flutuantes uniformes <br><br> rng.standard_normal(size = (3, 3)) <br> Gera valores flutuantes de uma distribuição normal (Média = 0 e Desivo Padrão = 1)
+019) Como calcular a mediana de uma matriz no numpy?	np.median(a = matriz, axis = None)
+020) Como retornar o percentil de uma matriz no numpy?	np.percentile(a = matriz, q = valor, axis = None)
+021) Como retornar a mediana de uma matriz no numpy?	np.median(a = matriz, axis = None)
+022) Como calcular o desvio padrão de uma matriz no numpy?	np.std(a = matriz, axis = None)
+023) Como calcular a variância de uma matriz no numpy?	np.var(a = matriz, axis = None)
+024) Caso eu queira colocar mais de uma condição em um array do numpy, quais são os operadores lógicos de and e or?	AND = & <br><br> OR = |
+025) Como alterar o formato de um vetor ou uma matriz?	np.reshape(a = vetor, newshape = (2, -1)) <br> A multiplicação das dimensões do novo formato deve ser igual ao antigo, você pode usar o valor -1 para que ele calcule o tamanho da última dimensão que falta
+026) Como gerar uma sequência de valores de um array do numpy semelhante ao range()?	np.arange(start = 0, stop = 10, step = 0.5, dtype = np.float64)
+027) Como gerar um vetor com x elementos distribuídos igualmente entre um determinado intervalo no numpy?	np.linspace(start = 0, stop = 8, num = 10, dtype = np.float64)
+028) Como gerar uma matriz onde todos os valores são iguais a um no numpy?	np.ones(shape = (3, 3), dtype = np.int32)
+029) Como gerar uma matriz onde todos os valores são iguais a zero no numpy?	np.zeros(shape = (3, 3), dtype = np.int32)
+030) Como gerar uma matriz onde todos os valores são iguais a um no numpy cujo formato das dimensões é igual a de outra matriz?	np.ones_like(a = matriz, dtype = np.float64)
+031) Como gerar uma matriz onde todos os valores são iguais a zero no numpy cujo formato das dimensões é igual a de outra matriz?	np.zeros_like(a = matriz, dtype = np.float64)
+032) Como criar uma matriz identidade no numpy?	np.eye(N = 4, M = 4, k = 0, dtype = int) <br><br> N: Quantidade de linhas <br> M: Quantidade de colunas que por padrão é igual a N <br> k: 0 deixa a diagonal no meio, enquanto valores positivos sobem a diagonal e valores negativos descem a diagonal

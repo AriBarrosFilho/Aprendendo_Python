@@ -3,3 +3,4 @@
 003) Como obter uma lista dos nomes das colunas de um dataframe no pandas?	list(df.columns)
 004) Como obter uma lista com os índices de um dataframe no pandas?	list(df.index)
 005) Como obter uma lista com os nomes das colunas que sejam de um mais tipos no dataframe do pandas?	df.select_dtypes(include = 'int').columns <br><br> df.select_dtypes(include = ['float', 'int']).columns
+006) Como acessar uma célula específica de um dataframe com base em seu índice e coluna (pegar seu valor e também poder alterar o valor)?	df.at[índice, coluna]
