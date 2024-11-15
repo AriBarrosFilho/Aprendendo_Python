@@ -1,6 +1,46 @@
-001) Como renomear uma ou mais colunas de um dataframe no pandas?	df = df.rename(columns={'A': 'Coluna1', 'B': 'Coluna2'}) <br><br> df.columns = ['Coluna1', 'Coluna2']
-002) Como alterar a ordem das colunas em um dataframe do pandas?	new_order = ['B', 'A', 'C'] <br> df = df[new_order]
-003) Como obter uma lista dos nomes das colunas de um dataframe no pandas?	list(df.columns)
-004) Como obter uma lista com os índices de um dataframe no pandas?	list(df.index)
-005) Como obter uma lista com os nomes das colunas que sejam de um mais tipos no dataframe do pandas?	df.select_dtypes(include = 'int').columns <br><br> df.select_dtypes(include = ['float', 'int']).columns
-Como acessar uma célula específica de um dataframe com base em seu índice e coluna (pegar seu valor e também poder alterar o valor)? df.at[índice, coluna]
+001) Com instalar as bibliotecas do requirements.txt?	pip install -r requirements.
+002) Como criar um arquivo de requirements.txt com base nas bibliotecas do ambiente atual?	<strong>pip freeze > requirements.txt</strong> <br> Cria uma lista com os pacotes instalados (pacotes mais relevantes) e suas respectivas versões <br> <br> <strong>pip list --format=freeze > requirements.txt</strong> <br> Cria uma lista com os pacotes instalados (inclusive pacotes em modo de desenvolvimento) e suas respectivas versões
+003) Como ler um arquivo .txt?	with open(file_path, 'r') as file: <br> texto = file.read()
+004) Como escrever um arquivo .txt?	with open(file_path, 'w') as file: <br> file.write(content)
+005) Como criar um ambiente virtual?	<b>python -m venv <u>nome do ambiente virtual</u></b>
+006) Como ativar um ambiente virtual?	<b>.\<u>nome do ambiente virtual</u>\Scripts\activate</b> <br><br> Também deve ser selecionado o kernel na parte superior direita da tela
+007) Como desativar um ambiente virtual?	<b>deactivate</b>
+008) Quais são os dois principais parâmetros do print?	<strong>sep</strong> que por padrão é <u>" "</u> <br><br> <strong>end</strong> que por padrão é <u>\n</u>
+009) Qual é o caractere especial do python que pula linha?	\n
+010) Qual é o caractere especial do python que faz uma tabulação?	\t
+011) Qual é o caractere especial do python que cria uma barra invertida?	\\
+012) Qual é o caractere especial do python que cria uma aspas simples?	\'
+013) Qual é o caractere especial do python que pula uma aspas dupla?	\"
+014) Qual é o caractere especial do python que dá um backspace?	\b
+015) Qual é o caractere especial do python que retorna para o início da string e sobrepõe o que já existe?	\r
+016) Como transformar duas ou mais listas em uma lista de tuplas?	list(zip(lista_1, lista_2,...,lista_n))
+017) Como compactar e descompactar listas usando zip?	Compactar => zip(lista_1, lista_2,...,lista_n) <br><br> lista_1, lista_2,...,lista_n = zip(*arquivo_zipado)
+018) Como iterar sobre múltiplas listas usando zip?	for num, letra in zip(lista1, lista2):
+019) Como instalar várias bibliotecas de uma vez sem informar suas versões?	pip install pandas numpy matplotlib
+020) Como instalar várias bibliotecas de uma vez informando as suas versões?	pip install scipy==1.13.0 tensorflow==2.17.0 tf-keras==2.17.0
+021) Como desinstalar uma biblioteca ou várias de uma única vez no python?	pip uninstall pandas numpy matplotlib
+022) Como mostrar a versão de uma ou mais bibliotecas?	pip show pandas numpy matplotlib <br><br> import pandas as pd <br> print(pd.__version__)
+023) Como mostrar todas as bibliotecas instaladas no python e suas respectivas versões?	pip list
+024) Como apresentar problemas de compatibilidade entre bibliotecas no python?	pip check
+025) Como atualizar uma biblioteca no python?	pip install --upgrade nome_da_biblioteca
+Em uma lista no python, como faço para adicionar um novo elemento no final da lista? .append()
+Em uma lista no python, como faço para adicionar somente os elementos de outra lista, tupla ou conjunto no final da minha lista? .extend()
+Qual o método da lista no python para adicionar um determinado elemento em uma determinada posição? .insert(1, "elemento") <br><br> lista_2[-1] = "elemento"
+Como remover a primeira ocorrência de um determinado elemento em uma lista? .remove("Maçã")
+Como remover e retornar um elemento de uma posição específica de uma lista? .pop(-1) <br><br> Caso a posição não seja fornecida, ele usará o último elemento
+Como retornar a posição da primeira ocorrência de um determinado elemento em uma lista? .index("abacate")
+Como ordenar uma lista e quais são seus parâmetros? .sort() <br><br> reverse = False: Crescente (Padrão) <br> reverse = True: Crescente
+Como inverter a ordem dos elementos em uma lista (A primeira posição vira a última...)? .reverse()
+Como fazer uma cópia de uma lista? lista_nova = lista.copy() <br> lista_nova = lista[:]
+Como remover todos os elementos de uma lista? .clear()
+Como contar quantos elementos específicos estão dentro de uma lista? .count("uva")
+Como transformar um interável em uma lista? list((3,)) <br> list({6}) <br> list(iterável)
+Como saber se há pelo menos um elemento Truthy em um iterável no python? any() <br> Se houver pelo menos um elemento Truthy, então é retornado True, caso contrário retorna False
+Como saber se todos os elementos de um iterável é Truthy no python? all() <br> Se todos os elementos forem Truthy, então é retornado True, caso contrário retorna False
+Explique o conceito de Truthy no python e dê exemplos? True, qualquer valor inteiro diferente de zero, qualquer valor flutuante diferente de zero, [1] # Lista com pelo menos um elemento, (0, 1)# Tupla com pelo menos um elemento, {"a": 1} # Dicionário com pelo menos um par chave-valor, {1} # Conjunto com pelo menos um elemento, "abc" # String não vazia
+Explique o conceito de Falsy no python e dê exemplos? False, 0, 0.0, 0j, None, [] # Lista vazia, ()  # Tupla vazia, {}  # Dicionário vazio, set()  # Conjunto vazio
+Explique o conceito de Truthy e Falsy? Em Python, "Truthy" e "Falsy" referem-se aos valores que, quando avaliados em um contexto booleano, como em uma instrução if, são interpretados como True ou False, respectivamente, mesmo que não sejam explicitamente os valores booleanos True e False.
+Explique o conceito de iteráveis (iterators) no python e dê exemplos? Listas (list), tuplas (tuple), dicionários (dict), conjuntos (set), strings (set), faixas (range)
+Explique o conceito de iteráveis no python? São objetos que podem ser percorridos um elemento por vez. Esses iteráveis suportam loops (for), compreensões de listas, e funções como map(), filter(), sum(), any(), all(), entre outras.
+Como verificar se um elemento específico está dentro de um iterável? elemento <strong>in</strong> iterável
+Como saber a quantidade de elementos (tamanho) de um iterável? len()
