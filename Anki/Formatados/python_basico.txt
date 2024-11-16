@@ -9,8 +9,8 @@
 009) Qual é o caractere especial do python que pula linha?	\n
 010) Qual é o caractere especial do python que faz uma tabulação?	\t
 011) Qual é o caractere especial do python que cria uma barra invertida?	\\
-012) Qual é o caractere especial do python que cria uma aspas simples?	\'
-013) Qual é o caractere especial do python que pula uma aspas dupla?	\"
+012) Qual é o caractere especial do python que cria aspas simples dentro de um print?	\'
+013) Qual é o caractere especial do python que cria aspas dupla dentro de um print?	\"
 014) Qual é o caractere especial do python que dá um backspace?	\b
 015) Qual é o caractere especial do python que retorna para o início da string e sobrepõe o que já existe?	\r
 016) Como transformar duas ou mais listas em uma lista de tuplas?	list(zip(lista_1, lista_2,...,lista_n))
@@ -29,7 +29,7 @@
 029) Como remover a primeira ocorrência de um determinado elemento em uma lista?	.remove("Maçã")
 030) Como remover e retornar um elemento de uma posição específica de uma lista?	.pop(-1) <br><br> Caso a posição não seja fornecida, ele usará o último elemento
 031) Como retornar a posição da primeira ocorrência de um determinado elemento em uma lista?	.index("abacate")
-032) Como ordenar uma lista e quais são seus parâmetros?	.sort() <br><br> reverse = False: Crescente (Padrão) <br> reverse = True: Crescente
+032) Como ordenar uma lista e quais são seus parâmetros?	.sort() <br><br> reverse = False: Crescente (Padrão) <br> reverse = True: decrescente
 033) Como inverter a ordem dos elementos em uma lista (a primeira posição vira a última...)?	.reverse()
 034) Como fazer uma cópia de uma lista?	lista_nova = lista.copy() <br> lista_nova = lista[:]
 035) Como remover todos os elementos de uma lista?	.clear()
@@ -38,9 +38,8 @@
 038) Como saber se há pelo menos um elemento truthy em um iterável no python?	any() <br> Se houver pelo menos um elemento Truthy, então é retornado True, caso contrário retorna False
 039) Como saber se todos os elementos de um iterável é truthy no python?	all() <br> Se todos os elementos forem Truthy, então é retornado True, caso contrário retorna False
 040) Explique o conceito de truthy no python e dê exemplos?	True, qualquer valor inteiro diferente de zero, qualquer valor flutuante diferente de zero, [1] # Lista com pelo menos um elemento, (0, 1)# Tupla com pelo menos um elemento, {"a": 1} # Dicionário com pelo menos um par chave-valor, {1} # Conjunto com pelo menos um elemento, "abc" # String não vazia
-041) Explique o conceito de falsy no python e dê exemplos?	False, 0, 0.0, 0j, None, [] # Lista vazia, ()  # Tupla vazia, {}  # Dicionário vazio, set()  # Conjunto vazio
-042) Explique o conceito de truthy e falsy?	Em Python, "Truthy" e "Falsy" referem-se aos valores que, quando avaliados em um contexto booleano, como em uma instrução if, são interpretados como True ou False, respectivamente, mesmo que não sejam explicitamente os valores booleanos True e False.
-043) Explique o conceito de iteráveis (iterators) no python e dê exemplos?	Listas (list), tuplas (tuple), dicionários (dict), conjuntos (set), strings (set), faixas (range)
-044) Explique o conceito de iteráveis no python?	São objetos que podem ser percorridos um elemento por vez. Esses iteráveis suportam loops (for), compreensões de listas, e funções como map(), filter(), sum(), any(), all(), entre outras.
-045) Como verificar se um elemento específico está dentro de um iterável?	elemento <strong>in</strong> iterável
-046) Como saber a quantidade de elementos (tamanho) de um iterável?	len()
+041) Explique o conceito de falsy no python e dê exemplos?	False, 0, 0.0, 0j, None, [] # Lista vazia, ()  # Tupla vazia, {}  # Dicionário vazio, set{}  # Conjunto vazio
+042) Dê exemplos de iteráveis (iterators) no python?	Listas (list), tuplas (tuple), dicionários (dict), conjuntos (set), strings (set), faixas (range)
+043) Explique o conceito de iteráveis no python?	São objetos que podem ser percorridos um elemento por vez. Esses iteráveis suportam loops (for), compreensões de listas, e funções como map(), filter(), sum(), any(), all(), entre outras.
+044) Como verificar se um elemento específico está dentro de um iterável?	elemento <strong>in</strong> iterável
+045) Como saber a quantidade de elementos (tamanho) de um iterável?	len()
