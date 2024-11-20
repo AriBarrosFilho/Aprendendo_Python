@@ -7,3 +7,6 @@
 007) Como criar um dataframe do zero?	Defina um dicionário onde as chaves serão o nome das colunas colunas e os valores serão as linhas, a quantidade de valores (linhas) precisam ter o mesmo tamanho. <br><br> df = pd.DataFrame(dados)
 008) Como salvar um dataframe no formato csv, excel ou parquet?	df.to_excel(excel_writer = 'arquivo_excel.xlsx', sheet_name= "Nome da aba", index = False) <br> df.to_csv(path_or_buf = "arquivo_csv.csv", sep = ";", index = False) <br> df.to_parquet(path = "arquivo.parquet", engine = "pyarrow", index = False)
 009) Como instalar as bibliotecas do parquet para usar os dataframes do pandas?	pip install pandas pyarrow <br> pip install fastparquet
+010) Como pegar o índice e transformar em uma coluna, por exemplo, um índice de datas?	df.reset_index(inplace=True) <br> df.rename(columns={'index': 'Date'}, inplace=True) <br><br> 1) Reseta o índice do dataframe porém não dropa esse índice, isso faz com que uma nova coluna seja criada <br> 2) Depois é só renomear essa nova coluna índice para o nome que você desejar
+011) Como resetar o índice em um dataframe?	df.reset_index(inplace = True)
+012) Como deletar uma ou mais colunas de um dataframe?	df.drop(columns=['A', 'C'], inplace = True) <br><br> del df['B'] <br><br> coluna_A = df.pop('A') <br> df = df.loc[:, df.columns != 'a']

@@ -5,7 +5,7 @@
 005) Como saber quantas dimensões tem em um array numpy?	<u>seu array</u>.ndim
 006) Como saber o formato de um array numpy?	<u>seu array</u>.shape
 007) Como somar todos os elementos de um array numpy?	np.sum(<u>seu array</u>) <br> <u>seu array</u>.sum() <br><br> a: array ou lista <br> axis: Eixo onde será somado <br> dtype: tipo de cada elemento no final <br> keepdims: Manter ou não as dimensões <br> initial: Adiciona mais esse valor
-008) Como selecionar elementos, linhas e colunas específicas em uma matriz do numpy?	
+008) Como selecionar elementos, linhas e colunas específicas em uma matriz do numpy?	matriz[0,:] # Primeira linha e todas as colunas <br> print(matriz[2:,:]) # A partir da terceira linha e todas as colunas
 009) Como obter as posições em um array que satisfazem uma determinada condição?	np.where(seu_array + condição)
 010) Como obter os elementos em um array que satisfazem uma determinada condição?	seu_array[seu_array + condição] <br><br> seu_array[np.where(seu_array + condição)]
 011) O que acontece quando você coloca um array e uma condição juntos de forma isolada?	Retorna outro array com os elementos sendo True ou False dependendo se satisfez a condição ou não
@@ -40,3 +40,5 @@
 040) Como concatenar duas ou mais matrizes?	np.concatenate([matriz_1, matriz_2, matriz_n], axis = 0)
 041) Como transpor uma matriz?	np.transpose(matriz) <br><br> matriz.T
 042) Como achatar uma matriz, ou seja, deixá-la com apenas uma única dimensão?	np.ravel(a = matriz, order = "C") <br><br> "C" Ordena pela linha, "F" Ordena pela coluna
+043) Como realizar a soma acumulativa no numpy?	np.cumsum(a = matriz,axis = 0)
+044) Como funciona o np.where()?	np.where(vetor + condição/condições, Elemento caso seja verdadeiro, Elemento caso seja falso) <br><br> np.where(vetor + condição/condições, True, False)

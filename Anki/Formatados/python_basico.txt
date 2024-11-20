@@ -43,3 +43,28 @@
 043) Explique o conceito de iteráveis no python?	São objetos que podem ser percorridos um elemento por vez. Esses iteráveis suportam loops (for), compreensões de listas, e funções como map(), filter(), sum(), any(), all(), entre outras.
 044) Como verificar se um elemento específico está dentro de um iterável?	elemento <strong>in</strong> iterável
 045) Como saber a quantidade de elementos (tamanho) de um iterável?	len()
+046) Como concaternar elementos de uma lista em uma única string com um separador em comum?	' '.join(lista)
+047) Explique como funciona o operador 'is' no python?	O operador is no Python é usado para verificar se duas variáveis referenciam o mesmo objeto na memória. Ele não compara valores, mas sim a identidade dos objetos.
+048) Qual o comando linux para extrair uma pasta zip de um diretório para outro?	!unzip -o /content/meu_arquivo.zip -d /content/minha_pasta_extraida <br><br> -o: Sobrescreve arquivos existentes, se necessário. <br> -d: Especifica o diretório de destino. No exemplo, o arquivo será extraído para /content/.
+049) Explique como funciona o operador map no python?	map(func, iterable) <br><br> Aplica uma função para todos os elementos de um iterável <br><br> Uma das vantagens é o Lazy Evaluation: Ele cria um iterador, processando os itens sob demanda, economizando memória.
+050) Explique como funciona o operador filter no python?	filter(func, iterable) <br><br> Filtra elementos de um iterável com base em uma condição <br><br> Uma das vantagens é o Lazy Evaluation: Ele cria um iterador, processando os itens sob demanda, economizando memória.
+051) Como usar o método isinstance() no python?	isinstance(4, int) <br> isinstance(3.1, (int, float))
+052) Como usar o lambda no python?	soma = lambda x, y: x + y <br> soma(2, 3) <br><br> lambda x: x ** 2 <br><br> checa_numero = lambda x: 'Positivo' if x > 0 else 'Negativo' if x < 0 else 'Zero' <br><br> gerador_impares = lambda n: (x for x in range(1, n+1) if x % 2 != 0)
+053) Como deixar todas as letras minúsculas, exceto a primeira em uma string?	texto.capitalize()
+054) Como deixar todas as letras minúsculas em uma string?	texto.casefold() texto.lower()
+055) Como deixar todas as letras maiúsculas em uma string?	texto.upper()
+056) Como deixar somente a primeira letra de cada palavra em maiúscula em uma string?	texto.title()
+057) Como fazer as letras maiúsculas se tornam minúsculas, e vice-versa em uma string?	texto.swapcase()
+058) Como contar a quantidade de um determinado caractere ou um conjunto de caracteres em uma string?	texto.count('maçã') <br><br> ('A' != 'a')
+059) Como encontrar a posição da primeira ocorrência de um caractere ou um conjunto de caracteres?	texto.find('Dados') texto.index('Dados')
+060) Como verificar se um caractere ou um conjunto de caracteres estão no início da string?	texto.startswith("primeiramente")
+061) Como verificar se um caractere ou um conjunto de caracteres estão no fim da string?	texto.endswith('.png')
+062) Como verificar se a string possui somente letras e números?	texto.isalnum()
+063) Como verificar se a string possui somente letras?	texto.isalpha()
+064) Como verificar se a string possui somente números?	texto.isnumeric()
+065) Qual a diferença entre os métodos de string .find e .index?	Ambos retornam a posição de um caractere pertence a string, ou um conjunto de caracteres que estejam contidas na string <br><br> Caso não exista, o find retorna -1, enquanto o index dá erro.
+066) Qual a diferença entre os métodos de string .casefold() .lower()?	.lower() respeita caracteres de outros idiomas, ao passo que o .casefold() elimina variações linguísticas?
+067) Como substituir um ou mais caracteres por outro ou mais caracteres?	texto.replace(',','.')
+068) Como remover espaços antes e depois de uma string?	texto.strip()
+069) Como dividir uma string e retornar suas divisões em uma listacom base em ou mais caracteres?	texto.split('@')
+070) Como retornar uma lista com base em cada linha de uma string?	texto.splitlines()

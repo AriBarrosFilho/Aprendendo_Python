@@ -5,7 +5,7 @@
 005) Como saber quantas dimensões tem em um array numpy?	<u>seu array</u>.ndim
 006) Como saber o formato de um array numpy?	<u>seu array</u>.shape
 007) Como somar todos os elementos de um array numpy?	np.sum(<u>seu array</u>) <br> <u>seu array</u>.sum() <br><br> a: array ou lista <br> axis: Eixo onde será somado <br> dtype: tipo de cada elemento no final <br> keepdims: Manter ou não as dimensões <br> initial: Adiciona mais esse valor
-008) Como selecionar elementos, linhas e colunas específicas em uma matriz do numpy?	
+008) Como selecionar elementos, linhas e colunas específicas em uma matriz do numpy?	matriz[0,:] # Primeira linha e todas as colunas <br> print(matriz[2:,:]) # A partir da terceira linha e todas as colunas
 009) Como obter as posições em um array que satisfazem uma determinada condição?	np.where(seu_array + condição)
 010) Como obter os elementos em um array que satisfazem uma determinada condição?	seu_array[seu_array + condição] <br><br> seu_array[np.where(seu_array + condição)]
 011) O que acontece quando você coloca um array e uma condição juntos de forma isolada?	Retorna outro array com os elementos sendo True ou False dependendo se satisfez a condição ou não
@@ -30,13 +30,15 @@
 030) Como gerar uma matriz onde todos os valores são iguais a um no numpy cujo formato das dimensões é igual a de outra matriz?	np.ones_like(a = matriz, dtype = np.float64)
 031) Como gerar uma matriz onde todos os valores são iguais a zero no numpy cujo formato das dimensões é igual a de outra matriz?	np.zeros_like(a = matriz, dtype = np.float64)
 032) Como criar uma matriz identidade no numpy?	np.eye(N = 4, M = 4, k = 0, dtype = int) <br><br> N: Quantidade de linhas <br> M: Quantidade de colunas que por padrão é igual a N <br> k: 0 deixa a diagonal no meio, enquanto valores positivos sobem a diagonal e valores negativos descem a diagonal
-Como criar uma matriz com um formato específico sem atribuir valores iniciais, apenas usando o valor alocado na memória? np.empty(shape = (3,6), dtype = np.float64)
-Como criar uma matriz diagonal com valores específicos? np.diag(v = [10,5,16], k = 0)
-Como criar uma matriz usando um ou mais números para preencher ela totalmente? np.full(shape = (2, 3), fill_value = 10) <br> np.full(shape = (2, 3), fill_value = [2, 7, 1])
-Como colocar dois ou mais vetores um do lado do outro formando uma matriz? np.c_[a, b, c] <br> cada vetor será uma coluna caso todos possuam o mesmo tamanho <br><br> c = np.array([[1,3]]) <br> d = np.array([[4,5,6]]) <br><br> print(np.c_[c, 0, d]) <br> Caso eles não tenham o mesmo tamanho, então será criado um vetor único
-Como calcular o determinante de uma matriz? np.linalg.det(matriz) <br> A matriz precisa ser quadrada
-Como calcular a diferença entre duas matrizes? np.allclose(a = vetor_1, b = vetor_2, rtol=1e-05, atol=1e-08, equal_nan = False) <br><br> absolute(a - b) <= (atol + rtol * absolute(b)) <br><br> equal_nan: Se for True, considera NaN em ambas as entradas como valores iguais. Se for False, NaN será tratado como diferente de qualquer outro valor (inclusive outro NaN).
-Como calcular a inversa de uma matriz? np.linalg.inv(matriz) <br><br> A @ A.inversa = A.inversa @ A = Identidade
-Como concatenar duas ou mais matrizes? np.concatenate([matriz_1, matriz_2, matriz_n], axis = 0)
-Como transpor uma matriz? np.transpose(matriz) <br><br> matriz.T
-Como achatar uma matriz, ou seja, deixá-la com apenas uma única dimensão? np.ravel(a = matriz, order = "C") <br><br> "C" Ordena pela linha, "F" Ordena pela coluna
+033) Como criar uma matriz com um formato específico sem atribuir valores iniciais, apenas usando o valor alocado na memória?	np.empty(shape = (3,6), dtype = np.float64)
+034) Como criar uma matriz diagonal com valores específicos?	np.diag(v = [10,5,16], k = 0)
+035) Como criar uma matriz usando um ou mais números para preencher ela totalmente?	np.full(shape = (2, 3), fill_value = 10) <br> np.full(shape = (2, 3), fill_value = [2, 7, 1])
+036) Como colocar dois ou mais vetores um do lado do outro formando uma matriz?	np.c_[a, b, c] <br> cada vetor será uma coluna caso todos possuam o mesmo tamanho <br><br> c = np.array([[1,3]]) <br> d = np.array([[4,5,6]]) <br><br> print(np.c_[c, 0, d]) <br> Caso eles não tenham o mesmo tamanho, então será criado um vetor único
+037) Como calcular o determinante de uma matriz?	np.linalg.det(matriz) <br> A matriz precisa ser quadrada
+038) Como calcular a diferença entre duas matrizes?	np.allclose(a = vetor_1, b = vetor_2, rtol=1e-05, atol=1e-08, equal_nan = False) <br><br> absolute(a - b) <= (atol + rtol * absolute(b)) <br><br> equal_nan: Se for True, considera NaN em ambas as entradas como valores iguais. Se for False, NaN será tratado como diferente de qualquer outro valor (inclusive outro NaN).
+039) Como calcular a inversa de uma matriz?	np.linalg.inv(matriz) <br><br> A @ A.inversa = A.inversa @ A = Identidade
+040) Como concatenar duas ou mais matrizes?	np.concatenate([matriz_1, matriz_2, matriz_n], axis = 0)
+041) Como transpor uma matriz?	np.transpose(matriz) <br><br> matriz.T
+042) Como achatar uma matriz, ou seja, deixá-la com apenas uma única dimensão?	np.ravel(a = matriz, order = "C") <br><br> "C" Ordena pela linha, "F" Ordena pela coluna
+Como realizar a soma acumulativa no numpy? np.cumsum(a = matriz,axis = 0)
+Como funciona o np.where()? np.where(vetor + condição/condições, Elemento caso seja verdadeiro, Elemento caso seja falso) <br><br> np.where(vetor + condição/condições, True, False)
