@@ -68,3 +68,8 @@
 068) Como remover espaços antes e depois de uma string?	texto.strip()
 069) Como dividir uma string e retornar suas divisões em uma listacom base em ou mais caracteres?	texto.split('@')
 070) Como retornar uma lista com base em cada linha de uma string?	texto.splitlines()
+071) Como criar um número complexo no python?	complex(1, 2) <br><br> 1 + 2j
+072) Como obter o valor inteiro de uma divisão e seu resto no python?	13 // 5 <br><br> 13 % 5 <br><br> inteiro, resto = divmod(13, 5)
+073) O que é o conjugado de um número complexo e como tê-lo no python?	O conjugado de um número complexo é obtido alterando o sinal da parte imaginária do número. <br><br> numero_complexo.conjugate()
+074) Como calcular um número elevado a outro no python?	x ** y <br> pow(x, y)
+075) Como arredondar um número no python?	round(numero, quantidade de casas decimais) <br><br> Se o segundo parâmetro não for preenchido, então o número será arredondado para um inteiro mais próximo

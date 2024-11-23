@@ -1,0 +1,2 @@
+shutil.copy(caminho, 'dataset/train')
+shutil.rmtree(caminho)
