@@ -13,3 +13,4 @@
 013) Como verificar se um diretório é um arquivo?	os.path.isfile(caminho_item)
 014) Com remover uma pasta que contém itens?	import shutil <br> shutil.rmtree(diretorio_pasta)
 015) Como obter os caminhos das pastas e subspastas com base em um diretório, além de seus arquivos internos?	dirpath, dirnames, filenames = os.walk()
+os.path.basename(

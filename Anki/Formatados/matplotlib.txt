@@ -1,0 +1,4 @@
+Como importar a biblioteca do matplotlib? import matplotlib.pyplot as plt
+Como colocar grades em um gráfico no matplotlib?  <br><br> plt.grid(axis='both', alpha=0.3) # axis = 'x', 'y', 'both'
+Como colocar um título para um gráfico do matplotlib? plt.title('Histograma dos Valores Ajustados', fontsize=16)
+Como colocar uma legenda no eixo x e y em um gráfico do matplotlib? plt.xlabel('Valores', fontsize=14) <br> plt.ylabel('Frequência', fontsize=14)

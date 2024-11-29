@@ -48,8 +48,8 @@
 048) Como usar o pi no numpy?	np.pi <br><br> pi = 3.1415926535897932384626433
 049) Como usar o número euler no numpy?	np.e <br><br> e = 2.7182818284590452353602874713526624977572470936
 050) Como usar o none no numpy?	np.nan
-051) Como usar o infinito e o menos infinito no numpy?	np.pi
-052) Como usar o pi no numpy?	np.inf e -np.inf
+051) Como usar o infinito e o menos infinito no numpy?	np.inf <br>-np.inf
+052) Como calcular o exponencial (e^x)? np.exp(x)
 053) Como usar o cosseno, seno e tangente no numpy?	np.cos(np.pi/2) <br> np.sin(np.pi/2) <br> np.tan(np.pi/4)
 054) Como retornar os elementos únicos de uma matriz ou vetor através de um vetor?	np.unique(ar = matriz) <br><br> np.unique(ar = matriz, return_index=True) <br> retorna dois arrays, o primeiro são os elmentos únicos em ordem crescente, e o segundo a posição da primeira ocorrência de cada um deles.
 055) Como alterar o tipo de uma matriz ou vetor no numpy?	matriz.astype(dtype = float)
