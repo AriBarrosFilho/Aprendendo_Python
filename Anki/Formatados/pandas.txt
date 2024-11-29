@@ -17,5 +17,5 @@
 017) Como apresentar as primeiras linhas de um dataframe, as últimas e linhas aleatórias?	df.head() <br> Por padrão apresenta as 5 primeiras linhas <br><br> df.tail() <br> Por padrão apresenta as 5 últimas linhas <br><br> df.sample() Por padrão apresenta 1 linha aleatória
 018) Como apresentar dados básicos de um dataframe como, quantidade, média, desvio padrão, valor mínimo e máximo, quartil de 25, 50 e 75%?	df.describe()
 019) Como apresentar os dados do dataframe referentes ao tipo de cada coluna, aos valores não nulos e a quantidade de memória utilizada?	df.info()
-020) Como mostrar a quantidade de linhas de cada coluna em um dataframe?
+020) Como mostrar a quantidade de linhas de cada coluna em um dataframe?	df.count()
 021) Como criar um novo dataframe, considerando algumas colunas de outro dataframe?	df_novo = df_antigo[[coluna_1, colunas_2]]
