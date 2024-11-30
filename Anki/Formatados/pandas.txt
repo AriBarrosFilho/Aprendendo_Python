@@ -19,3 +19,6 @@
 019) Como apresentar os dados do dataframe referentes ao tipo de cada coluna, aos valores não nulos e a quantidade de memória utilizada?	df.info()
 020) Como mostrar a quantidade de linhas de cada coluna em um dataframe?	df.count()
 021) Como criar um novo dataframe, considerando algumas colunas de outro dataframe?	df_novo = df_antigo[[coluna_1, colunas_2]]
+022) Como alterar o nome da coluna índice de um dataframe?	df_novo.index.name = "Data"
+023) Como remover o nome da coluna índice de um dataframe?	df_novo.index.name = None
+024) Como transformar um arquivo do formato series para o formato dataframe?	.to_frame()

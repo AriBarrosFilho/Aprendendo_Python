@@ -95,3 +95,9 @@
 095) Como usar o sorted no python?	sorted(numeros, key=None, reverse=False)
 096) Como inverter a ordem dos elementos de um iterável no python?	reversed(iterable) <br> Inverte a sequência dos elementos em um iterável
 097) Explique o que é combinação e permutação, e como aplicar em um iterável do python?	from itertools import combinations, permutations <br> list(combinations(lista, r = 3)) # Combinação refere-se a seleções de elementos, onde a ordem não importa. <br> list(permutations(lista, r = 2)) # Permutação refere-se a arranjos de elementos, onde a ordem importa.
+098) Como encontrar o fase (ângulo em radianos) de um número complexo?	from cmath import phase <br> phase(complex(1, 1)) <br> phase(2 + 1j)
+099) Como encontrar a forma polar de um número complexo, ou seja, o módulo e a fase (ângulo em radianos) de um número complexo?	from cmath import polar <br> polar(complex(1, 1)) <br> polar(2 + 1j)
+100) Como encontrar a forma retangular de um número complexo, ou seja, seu valor real e imaginário com base em seu módulo e ângulo em radianos?	from cmath import rect <br> rect(1.414213, 0.7853981)
+101) Explique o que é permutação e como obter no python?	O número de permutações corresponde a todas as formas possíveis de organizar os elementos de um conjunto. <br><br> from math import factorial <br> factorial(3)
+102) Explique o que é arranjo e como obter no python?	Arranjo é a escolha de alguns elementos de um conjunto (sem repetir) e a organização desses elementos escolhidos, levando em conta a ordem. <br><br> import math <br> math.perm(5, 2) # Retorna a quantidade <br><br> list(permutations(iterable = lista, r = 2)) # Retorna os possíveis elementos
+103) Explique o que é combinação e como obter no python?	Combinação é a escolha de alguns elementos de um conjunto (sem repetir), sem se preocupar com a ordem, ou seja {1, 3, 2} = {3, 2, 1}. <br><br> import math <br> list(math.combinations(iterable = lista, r = 3))
