@@ -42,14 +42,14 @@
 042) Como achatar uma matriz, ou seja, deixá-la com apenas uma única dimensão?	np.ravel(a = matriz, order = "C") <br><br> "C" Ordena pela linha, "F" Ordena pela coluna
 043) Como realizar a soma acumulativa no numpy?	np.cumsum(a = matriz,axis = 0)
 044) Como funciona o np.where()?	np.where(vetor + condição/condições, Elemento caso seja verdadeiro, Elemento caso seja falso) <br><br> np.where(vetor + condição/condições, True, False)
-045) Como resolver uma equação no numpy considerando ax = b, onde x é o vetor que desejamos encontrar?	np.linalg.solve(A, B)
+045) Como resolver uma equação no numpy considerando Ax = B, onde x é o vetor que desejamos encontrar?	np.linalg.solve(A, B)
 046) Como verificar se os todos os elementos de uma matriz numpy são truth?	np.all(a = matriz, axis = None)
 047) Como verificar se pelo menos um elemento de uma matriz numpy é truth?	np.any(a = matriz, axis = None)
 048) Como usar o pi no numpy?	np.pi <br><br> pi = 3.1415926535897932384626433
 049) Como usar o número euler no numpy?	np.e <br><br> e = 2.7182818284590452353602874713526624977572470936
 050) Como usar o none no numpy?	np.nan
 051) Como usar o infinito e o menos infinito no numpy?	np.inf <br>-np.inf
-052) Como calcular o exponencial (e^x)? np.exp(x)
+052) Como elevar o número de euler a um expoente (exponencial)?	np.exp(x)
 053) Como usar o cosseno, seno e tangente no numpy?	np.cos(np.pi/2) <br> np.sin(np.pi/2) <br> np.tan(np.pi/4)
 054) Como retornar os elementos únicos de uma matriz ou vetor através de um vetor?	np.unique(ar = matriz) <br><br> np.unique(ar = matriz, return_index=True) <br> retorna dois arrays, o primeiro são os elmentos únicos em ordem crescente, e o segundo a posição da primeira ocorrência de cada um deles.
 055) Como alterar o tipo de uma matriz ou vetor no numpy?	matriz.astype(dtype = float)
