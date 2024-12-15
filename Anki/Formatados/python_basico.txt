@@ -66,7 +66,7 @@
 066) Qual a diferença entre os métodos de string .casefold() .lower()?	.lower() respeita caracteres de outros idiomas, ao passo que o .casefold() elimina variações linguísticas?
 067) Como substituir um ou mais caracteres por outro ou mais caracteres?	texto.replace(',','.')
 068) Como remover espaços antes e depois de uma string?	texto.strip()
-069) Como dividir uma string e retornar suas divisões em uma listacom base em ou mais caracteres?	texto.split('@')
+069) Como dividir uma string e retornar suas divisões em uma lista com base em ou mais caracteres?	texto.split('@')
 070) Como retornar uma lista com base em cada linha de uma string?	texto.splitlines()
 071) Como criar um número complexo no python?	complex(1, 2) <br><br> 1 + 2j
 072) Como obter o valor inteiro de uma divisão e seu resto no python?	13 // 5 <br><br> 13 % 5 <br><br> inteiro, resto = divmod(13, 5)
