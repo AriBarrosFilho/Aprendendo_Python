@@ -55,3 +55,5 @@
 055) Como alterar o tipo de uma matriz ou vetor no numpy?	matriz.astype(dtype = float)
 056) Como tirar a raíz quadrada no numpy?	np.sqrt(2)
 057) Como elevar um número, vetor ou matriz a um expoente no numpy?	np.power(vetor, 2)
+Como transformar um valor de radianos para graus usando numpy? np.degrees() <br> np.rad2deg()
+Como transformar um valor de graus para radianos usando numpy? np.radians() <br> np.deg2rad()

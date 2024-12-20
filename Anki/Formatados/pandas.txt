@@ -12,8 +12,8 @@
 012) Como deletar uma ou mais colunas de um dataframe?	df.drop(columns=['A', 'C'], inplace = True) <br><br> del df['B'] <br><br> coluna_A = df.pop('A') <br> df = df.loc[:, df.columns != 'a']
 013) Como apresenta a quantidade de classes em uma coluna e suas respectivas quantidades?	df['coluna'].value_counts()
 014) Como criar um dataframe com base na filtragem de linhas de uma colunas em relação à uma lista?	novo_df = df[df['coluna1'].isin(lista)]
-015) Como apresenta a soma dos valores nulos das colunas de um dataframe?	df.isnull().sum()
-016) Como apresenta a média dos valores nulos das colunas de um dataframe?	df.isnull().mean()
+015) Como apresentar a soma dos valores nulos das colunas de um dataframe?	df.isnull().sum()
+016) Como apresentar a média dos valores nulos das colunas de um dataframe?	df.isnull().mean()
 017) Como apresentar as primeiras linhas de um dataframe, as últimas e linhas aleatórias?	df.head() <br> Por padrão apresenta as 5 primeiras linhas <br><br> df.tail() <br> Por padrão apresenta as 5 últimas linhas <br><br> df.sample() Por padrão apresenta 1 linha aleatória
 018) Como apresentar dados básicos de um dataframe como, quantidade, média, desvio padrão, valor mínimo e máximo, quartil de 25, 50 e 75%?	df.describe()
 019) Como apresentar os dados do dataframe referentes ao tipo de cada coluna, aos valores não nulos e a quantidade de memória utilizada?	df.info()
@@ -22,3 +22,4 @@
 022) Como alterar o nome da coluna índice de um dataframe?	df_novo.index.name = "Data"
 023) Como remover o nome da coluna índice de um dataframe?	df_novo.index.name = None
 024) Como transformar um arquivo do formato series para o formato dataframe?	.to_frame()
+Como criar um dataframe através de uma lista de tuplas? colunas = ['coluna_1', 'coluna_2'] <br> df_rotacoes = pd.DataFrame(data = lista_de_tuplas, columns = colunas)
