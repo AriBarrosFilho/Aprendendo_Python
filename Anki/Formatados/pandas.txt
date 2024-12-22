@@ -22,4 +22,4 @@
 022) Como alterar o nome da coluna índice de um dataframe?	df_novo.index.name = "Data"
 023) Como remover o nome da coluna índice de um dataframe?	df_novo.index.name = None
 024) Como transformar um arquivo do formato series para o formato dataframe?	.to_frame()
-Como criar um dataframe através de uma lista de tuplas? colunas = ['coluna_1', 'coluna_2'] <br> df_rotacoes = pd.DataFrame(data = lista_de_tuplas, columns = colunas)
+025) Como criar um dataframe através de uma lista de tuplas?	colunas = ['coluna_1', 'coluna_2'] <br> df_rotacoes = pd.DataFrame(data = lista_de_tuplas, columns = colunas)
