@@ -23,3 +23,18 @@
 023) Como remover o nome da coluna índice de um dataframe?	df_novo.index.name = None
 024) Como transformar um arquivo do formato series para o formato dataframe?	.to_frame()
 025) Como criar um dataframe através de uma lista de tuplas?	colunas = ['coluna_1', 'coluna_2'] <br> df_rotacoes = pd.DataFrame(data = lista_de_tuplas, columns = colunas)
+026) Como criar uma lista de tipos de colunas de um dataframe seguindo a sequência?	list(df.dtypes)
+027) Como obter informações báiscas e iniciais das colunas não-numéricas de um dataframe, como seus valores únicos, a frequência?	df.describe(exclude = "number")
+028) Como pegar somente uma coluna de um dataframe e deixá-la também em dataframe ao invés de series?	df_coluna_1 = df[["coluna_1"]]
+029) Como visualizar o describe de um dataframe do pandas com os números com menos casas decimais?	with pd.option_context("float_format", "{:.1f}".format): <br> display(df_cereal.describe())
+030) Com base em um dataframe do pandas, como faço para ferificar a soma e a média de linhas de todas as colunas que satisfazem uma determinada condição?	((df_cereal.select_dtypes(include="number") == 100) | (df_cereal.select_dtypes(include="number") == 50)).mean() * 100 <br><br> ((df_cereal.select_dtypes(include="number") < 100) & (df_cereal.select_dtypes(include="number") > 50)).mean() * 100 <br><br> df_cereal[df_cereal.isin([100, 50])].count()
+031) Como mostrar a quantidade de valores únicos para cada coluna de um dataframe no pandas?	df.nunique()
+032) Como mostrar quais são os valores únicos para uma determinada coluna de um dataframe no pandas?	df["coluna_1"].unique()
+033) Como selecionar uma faixa de linhas e colunas para um dataframe no pandas?	df.iloc[3:7, 1:4] <br><br> df[3:7] # Seleciona somente as linhas
+034) Como selecionar linhas e colunas específicas de um dataframe no pandas com base em seu índice numérico?	df.iloc[[1, 4, 7], [2, 5]]
+035) Como selecionar linhas e colunas específicas de um dataframe no pandas com base em seus nomes?	df.loc[[1, 4, 7], ["coluna_1", "coluna_2"]]
+036) Quais são os operadores lógicos de um dataframe no pandas (que também são utilizados no numpy)?	& # and <br> | # or <br> ~ # not
+037) Como obter o valor máximo e o valor mínimo de cada coluna de um dataframe do pandas?	df.max() <br> df.min()
+038) Como obter os índices das linhas que possuem o valor máximo e o valor mínimo para cada coluna de um dataframe do pandas?	df.idxmax() <br> df.idxmin()
+039) Como usar o query no pandas?	df.query("coluna_1 > 100 and coluna_2 < 50") <br> df.query("coluna_1 > 100 or not coluna_2 < 50") <br> df.query("coluna_3 == 'classe_a' and coluna_4 != 'classe_b'")
+040) Como usar o groupby no pandas?	df_cereal.groupby("mfr")[["calories", "rating"]].mean()

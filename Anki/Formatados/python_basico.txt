@@ -1,4 +1,4 @@
-001) Com instalar as bibliotecas do requirements.txt?	pip install -r requirements.
+001) Com instalar as bibliotecas do requirements.txt?	pip install -r requirements.txt
 002) Como criar um arquivo de requirements.txt com base nas bibliotecas do ambiente atual?	<strong>pip freeze > requirements.txt</strong> <br> Cria uma lista com os pacotes instalados (pacotes mais relevantes) e suas respectivas versões <br> <br> <strong>pip list --format=freeze > requirements.txt</strong> <br> Cria uma lista com os pacotes instalados (inclusive pacotes em modo de desenvolvimento) e suas respectivas versões
 003) Como ler um arquivo .txt?	with open(file_path, 'r') as file: <br> texto = file.read()
 004) Como escrever um arquivo .txt?	with open(file_path, 'w') as file: <br> file.write(content)
@@ -101,3 +101,8 @@
 101) Explique o que é permutação e como obter no python?	O número de permutações corresponde a todas as formas possíveis de organizar os elementos de um conjunto. <br><br> from math import factorial <br> factorial(3)
 102) Explique o que é arranjo e como obter no python?	Arranjo é a escolha de alguns elementos de um conjunto (sem repetir) e a organização desses elementos escolhidos, levando em conta a ordem. <br><br> import math <br> math.perm(5, 2) # Retorna a quantidade <br><br> list(permutations(iterable = lista, r = 2)) # Retorna os possíveis elementos
 103) Explique o que é combinação e como obter no python?	Combinação é a escolha de alguns elementos de um conjunto (sem repetir), sem se preocupar com a ordem, ou seja {1, 3, 2} = {3, 2, 1}. <br><br> import math <br> list(math.combinations(iterable = lista, r = 3))
+104) Considerando que um certo comando em python esteja muito comprido em uma linha, como faço para passar o código para a linha de baixo de modo que o python entenda a continuação?	Utilizando a contrabarra (barra invertida)
+105) Como usar o operador condicional ternário no python?	valor1 if condicao1 else valor2 if condicao2 else valor3
+106) Como transformar um dicionário em uma lista de tuplas?	list(dicionario.items())
+107) Como transformar uma lista de tuplas em um dicionário?	{chave: valor for (chave, valor) in lista_tuplas} <br><br> As tuplas na lista devem conter somente dois elementos, a chave e o valor, respectivamente.
+108) Como baixar um dataset do kaggle através de uma célula de notebook?	!pip install kaggle <br>  <br> import kaggle <br> kaggle.api.authenticate() <br> kaggle.api.dataset_download_files(dataset = "sevgisarac/temperature-change", path = "dados", unzip = True) <br> # dataset: Vá na página principal do dataset que você deseja baixar e pegue a última parte do link <br> # path: É a pasta que será criada para extrair os arquivos, você pode deixar somente o ponto final para não criar nenhuma pasta

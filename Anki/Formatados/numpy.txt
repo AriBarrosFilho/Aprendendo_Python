@@ -57,3 +57,15 @@
 057) Como elevar um número, vetor ou matriz a um expoente no numpy?	np.power(vetor, 2)
 058) Como transformar um valor de radianos para graus usando numpy?	np.degrees() <br> np.rad2deg()
 059) Como transformar um valor de graus para radianos usando numpy?	np.radians() <br> np.deg2rad()
+060) Explique como funciona o método do numpy np.c_[array_1, array_2], np.r_[array_1, array_2] e np.concatatenate([array_1, array_2])?	np.concatatenate([array_1, array_2], axis = 0) = np.r_[array_1, array_2] <br> Junta os arrays de modo que aumenta a quantidade de linhas <br><br><br> np.concatatenate([array_1, array_2], axis = 1) = np.c_[array_1, array_2] <br> Junta os arrays de modo que aumenta a quantidade de colunas
+061) Explique quais são os métodos do numpy para arredondamento e a diferença entre eles?	np.round(vetor, decimals = 2) = np.around(vetor, decimals = 2) <br> np.fix() # Arredonda um número decimal para o inteiro mais próximo de zero <br> np.rint() # Arredonda um número decimal para o inteiro mais próximo <br> np.trunc() # Remove a parte das casas decimais
+062) Como calcular a diferença entre os valores consecutivos de um array numpy?	np.diff()
+063) Como calcular o produto de todos os elementos de um array numpy?	np.prod()
+064) Como calcular o produto acumulado de elementos em sequência de um array nump?	np.cumprod()
+065) Como calcular o produto vetorial de dois vetores dimensionais ou tridimensionais no numpy?	np.cross(vetor_1, vetor_2) # Utilize 3 dimensões, mesmo que uma delas seja 0
+066) Como calcular a integral (área) de uma curva através do método do trapézio considerando uma sequência de valores em um array numpy?	x = np.linspace(start = 0, stop = 3, num = 500) <br> y = x ** 2 <br> np.trapezoid(y = y, x = x)
+067) Como calcula o gradiente de uma curva através do método do trapézio considerando uma sequência de valores em um array numpy?	x = np.linspace(start = -5, stop = 20, num = 50) <br> y = ((x - 5) ** 3 - 10) / 20 <br> resultado = np.gradient(y, x)
+068) Como calcular o mínimo múltiplo comum (mmc) de dois números ou arrays?	np.lcm(x, y)
+069) Como calcular o maior divisor comum (mdc) de dois números ou arrays?	np.gcd(x, y)
+070) Como separar um número ou array em duas partes, a fracionária e a inteira usando numpy?	np.modf(numero_ou_vetor)
+071) Como obter o quociente e o resto da divisão de dois números ou arrays usando numpy?	np.divmod(vetor_1, vetor_2)

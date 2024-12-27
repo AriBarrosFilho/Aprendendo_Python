@@ -2,3 +2,20 @@ Como importar a biblioteca do matplotlib? import matplotlib.pyplot as plt
 Como colocar grades em um gráfico no matplotlib?  <br><br> plt.grid(axis='both', alpha=0.3) # axis = 'x', 'y', 'both'
 Como colocar um título para um gráfico do matplotlib? plt.title('Histograma dos Valores Ajustados', fontsize=16)
 Como colocar uma legenda no eixo x e y em um gráfico do matplotlib? plt.xlabel('Valores', fontsize=14) <br> plt.ylabel('Frequência', fontsize=14)
+
+
+import matplotlib.pyplot as plt
+
+# Criar o gráfico
+plt.plot(x, y, label=r'$f(x) = \frac{(x - 5)^3-10}{20}$', color='blue', linestyle='-')  # Curva do seno
+plt.plot(x, resultado, label='Gradiente', color='red', linestyle='-')  # Curva do cosseno
+
+# Personalizar o gráfico
+plt.title('Gráfico de Seno e Cosseno')
+plt.xlabel('x')
+plt.ylabel('Valor da Função')
+plt.legend()  # Exibir a legenda
+plt.grid(True, axis = "both", alpha = 0.2, ls = ":")  # Exibir a grade
+
+# Exibir o gráfico
+plt.show()
