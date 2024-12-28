@@ -37,4 +37,4 @@
 037) Como obter o valor máximo e o valor mínimo de cada coluna de um dataframe do pandas?	df.max() <br> df.min()
 038) Como obter os índices das linhas que possuem o valor máximo e o valor mínimo para cada coluna de um dataframe do pandas?	df.idxmax() <br> df.idxmin()
 039) Como usar o query no pandas?	df.query("coluna_1 > 100 and coluna_2 < 50") <br> df.query("coluna_1 > 100 or not coluna_2 < 50") <br> df.query("coluna_3 == 'classe_a' and coluna_4 != 'classe_b'")
-040) Como usar o groupby no pandas?	df_cereal.groupby("mfr")[["calories", "rating"]].mean()
+040) Como usar o groupby no pandas?	df.groupby(["coluna_1", "coluna_2"])[["coluna_3", "coluna_4", "coluna_5"]].mean()
