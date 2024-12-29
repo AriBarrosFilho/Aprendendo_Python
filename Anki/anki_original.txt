@@ -36,5 +36,10 @@
 036) Quais são os operadores lógicos de um dataframe no pandas (que também são utilizados no numpy)?	& # and <br> | # or <br> ~ # not
 037) Como obter o valor máximo e o valor mínimo de cada coluna de um dataframe do pandas?	df.max() <br> df.min()
 038) Como obter os índices das linhas que possuem o valor máximo e o valor mínimo para cada coluna de um dataframe do pandas?	df.idxmax() <br> df.idxmin()
-Como usar o query no pandas? df.query("coluna_1 > 100 and coluna_2 < 50") <br> df.query("coluna_1 > 100 or not coluna_2 < 50") <br> df.query("coluna_3 == 'classe_a' and coluna_4 != 'classe_b'")
-Como usar o groupby no pandas? df_cereal.groupby("mfr")[["calories", "rating"]].mean()
+039) Como usar o query no pandas?	df.query("coluna_1 > 100 and coluna_2 < 50") <br> df.query("coluna_1 > 100 or not coluna_2 < 50") <br> df.query("coluna_3 == 'classe_a' and coluna_4 != 'classe_b'")
+040) Como usar o groupby no pandas?	df.groupby(["coluna_1", "coluna_2"])[["coluna_3", "coluna_4", "coluna_5"]].mean()
+Como ordenar um dataframe com base em uma coluna numérica? df.sort_values(by = "coluna_1", ascending = False) <br><br> ascending = True (Padrão)
+Como dividir uma coluna numérica de um dataframe em x faixas iguais e observar a quantidade ou a frequência de cada faixa? df["coluna_1"].value_counts(bins = 5, normalize = False) <br><br> normalize = False (padrão) <br> Mostra a quantidade normalize = True, Mostra o percentual
+Qual o método do pandas para ordenar uma dataframe ou series de acordo com o índice? .sort_index(ascending = True)
+Como arredondar as casas decimais de todas as colunas numéricas de um dataframe? df.round(decimals = 2)
+Como transformar um dataframe em um dicionário? dicionario = df.to_dict(orient = "list")
