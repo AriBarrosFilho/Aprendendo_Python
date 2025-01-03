@@ -43,3 +43,7 @@
 043) Qual o método do pandas para ordenar uma dataframe ou series de acordo com o índice?	.sort_index(ascending = True)
 044) Como arredondar as casas decimais de todas as colunas numéricas de um dataframe?	df.round(decimals = 2)
 045) Como transformar um dataframe em um dicionário?	dicionario = df.to_dict(orient = "list")
+046) Explique o conceito de pivot no dataframe do pandas?	df.pivot(index = ["coluna_1", "coluna_2"], columns = ["coluna_3", "coluna_4"], values = "coluna_5")
+047) Explique o conceito de stack e unstack no dataframe do pandas?	# Transforma colunas padrão para colunas índices <br> df_pivot.stack(level = [0, 1], future_stack = True) <br><br> # Para transformar colunas de índice em colunas padrão <br> df_pivot_stack.unstack(level = [1, 2])
+048) Explique o conceito de pivot_table no dataframe do pandas?	df.pivot_table(index = ["Estudante", "Categoria"], columns = ["Semana", "Tópico"], values = "Nota", aggfunc = "mean") <br><br> # Realiza alguma operação com as linhas duplicadas, como a média, soma, contagem
+049) Qual é a outra função de agregação do pandas utilizado junto com o groupby para saber a quantidade?	df.groupby(by = ["coluna_1", "coluna_2"]).size()

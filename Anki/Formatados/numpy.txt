@@ -35,7 +35,7 @@
 035) Como criar uma matriz usando um ou mais números para preencher ela totalmente?	np.full(shape = (2, 3), fill_value = 10) <br> np.full(shape = (2, 3), fill_value = [2, 7, 1])
 036) Como colocar dois ou mais vetores um do lado do outro formando uma matriz?	np.c_[a, b, c] <br> cada vetor será uma coluna caso todos possuam o mesmo tamanho <br><br> c = np.array([[1,3]]) <br> d = np.array([[4,5,6]]) <br><br> print(np.c_[c, 0, d]) <br> Caso eles não tenham o mesmo tamanho, então será criado um vetor único
 037) Como calcular o determinante de uma matriz?	np.linalg.det(matriz) <br> A matriz precisa ser quadrada
-038) Como calcular a diferença entre duas matrizes?	np.allclose(a = vetor_1, b = vetor_2, rtol=1e-05, atol=1e-08, equal_nan = False) <br><br> absolute(a - b) <= (atol + rtol * absolute(b)) <br><br> equal_nan: Se for True, considera NaN em ambas as entradas como valores iguais. Se for False, NaN será tratado como diferente de qualquer outro valor (inclusive outro NaN).
+038) Como saber se duas matrizes são iguais considerando a diferença entre elas?	np.allclose(a = vetor_1, b = vetor_2, rtol=1e-05, atol=1e-08, equal_nan = False) <br><br> absolute(a - b) <= (atol + rtol * absolute(b)) <br><br> equal_nan: Se for True, considera NaN em ambas as entradas como valores iguais. Se for False, NaN será tratado como diferente de qualquer outro valor (inclusive outro NaN).
 039) Como calcular a inversa de uma matriz?	np.linalg.inv(matriz) <br><br> A @ A.inversa = A.inversa @ A = Identidade
 040) Como concatenar duas ou mais matrizes?	np.concatenate([matriz_1, matriz_2, matriz_n], axis = 0)
 041) Como transpor uma matriz?	np.transpose(matriz) <br><br> matriz.T

@@ -63,7 +63,7 @@
 063) Como verificar se a string possui somente letras?	texto.isalpha()
 064) Como verificar se a string possui somente números?	texto.isnumeric()
 065) Qual a diferença entre os métodos de string .find e .index?	Ambos retornam a posição de um caractere pertence a string, ou um conjunto de caracteres que estejam contidas na string <br><br> Caso não exista, o find retorna -1, enquanto o index dá erro.
-066) Qual a diferença entre os métodos de string .casefold() .lower()?	.lower() respeita caracteres de outros idiomas, ao passo que o .casefold() elimina variações linguísticas?
+066) Qual a diferença entre os métodos de string .casefold() .lower()?	.lower() respeita caracteres de outros idiomas, ao passo que o .casefold() elimina variações linguísticas
 067) Como substituir um ou mais caracteres por outro ou mais caracteres?	texto.replace(',','.')
 068) Como remover espaços antes e depois de uma string?	texto.strip()
 069) Como dividir uma string e retornar suas divisões em uma lista com base em ou mais caracteres?	texto.split('@')
@@ -73,7 +73,7 @@
 073) O que é o conjugado de um número complexo e como tê-lo no python?	O conjugado de um número complexo é obtido alterando o sinal da parte imaginária do número. <br><br> numero_complexo.conjugate()
 074) Como calcular um número elevado a outro no python?	x ** y <br> pow(x, y)
 075) Como arredondar um número no python?	round(numero, quantidade de casas decimais) <br><br> Se o segundo parâmetro não for preenchido, então o número será arredondado para um inteiro mais próximo
-076) No python, como alinhar uma string à direita, à esquerda, no centro, e como colocar um caractere ao invés de espaço nesse preenchimento?	print(f'{meutexto:_>30}') # Alinhado à direita, se o texto possuir 10 caracteres então 20 espaços à direita será preenchido com espaço <br> print(f'{meutexto:<30}') # Alinhado à esquerda <br> print(f'{meutexto:^30}') # Alinhado no centro <br> print(f'{meutexto:_^30}') # Alinhado no centro, preenchendo com _
+076) Como criar um dicinário com base em duas lista, uma contendo as chaves e a outra os valores?	dicionario = dict(zip(lista_1, lista_2))
 077) Quais são as formas de retornar um valor de uma determinada chave de um dicionário no python?	dicionario[chave] # Dá erro caso não ache a chave <br> dicionario.get() # Retorna None caso não ache a chave
 078) Como verificar se há uma chave no dicionário no python?	chave in dicionario
 079) Como retornar o par de chaves e valores em um dicionário no python?	dicionario.items()
@@ -114,3 +114,5 @@
 114) Qual a forma de de colocar a porcentagem em um número dentro de uma string?	print(f"Texto aleatório {numero:.2%} outra parte de um texto aleatório")
 115) Como colocar zeros à esquerda de um número que será mostrado em uma string?	print(f"Texto aleatório {numero:05} outra parte de um texto aleatório")
 116) Explique o que são e o funcionamento detalhado de *args e **kwargs?	Ambos são tipos de parâmetros em funções, onde *args são tuplas e **kwargs dicionários, você pode utilizar qualquer nome no lugar de args e kwargs, contudo precisa manter a quantidade especifica de asteriscos.
+117) Como adicionar chaves e valores em um dicionário já existente?	dicionario1 = {'a': 1, 'b': 2} <br> dicionario2 = {'b': 3, 'c': 4} <br> dicionario1.update(dicionario2) <br><br> dicionario1["d"] = 5 <br><br> dicionario1.update(e = 6) # Cria uma chave "e" com valor igual a 6 <br><br> dicionario1.setdefault("a", 10) <br> dicionario1.setdefault("f", 20)
+118) Como criar um dicionário considerando que todas as chaves possuam o mesmo valor inicial?	chaves = ['x', 'y', 'z'] <br> valores_padrao = 0 <br> dicionario = dict.fromkeys(chaves, valores_padrao)
