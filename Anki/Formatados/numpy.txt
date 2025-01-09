@@ -42,7 +42,7 @@
 042) Como achatar uma matriz, ou seja, deixá-la com apenas uma única dimensão?	np.ravel(a = matriz, order = "C") <br><br> "C" Ordena pela linha, "F" Ordena pela coluna
 043) Como realizar a soma acumulativa no numpy?	np.cumsum(a = matriz,axis = 0)
 044) Como funciona o np.where()?	np.where(vetor + condição/condições, Elemento caso seja verdadeiro, Elemento caso seja falso) <br><br> np.where(vetor + condição/condições, True, False)
-045) Como resolver uma equação no numpy considerando ax = b, onde x é o vetor que desejamos encontrar?	np.linalg.solve(A, B)
+045) Como resolver uma equação no numpy considerando Ax = B, onde x é o vetor que desejamos encontrar?	np.linalg.solve(A, B)
 046) Como verificar se os todos os elementos de uma matriz numpy são truth?	np.all(a = matriz, axis = None)
 047) Como verificar se pelo menos um elemento de uma matriz numpy é truth?	np.any(a = matriz, axis = None)
 048) Como usar o pi no numpy?	np.pi <br><br> pi = 3.1415926535897932384626433

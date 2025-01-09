@@ -47,3 +47,13 @@
 047) Explique o conceito de stack e unstack no dataframe do pandas?	# Transforma colunas padrão para colunas índices <br> df_pivot.stack(level = [0, 1], future_stack = True) <br><br> # Para transformar colunas de índice em colunas padrão <br> df_pivot_stack.unstack(level = [1, 2])
 048) Explique o conceito de pivot_table no dataframe do pandas?	df.pivot_table(index = ["Estudante", "Categoria"], columns = ["Semana", "Tópico"], values = "Nota", aggfunc = "mean") <br><br> # Realiza alguma operação com as linhas duplicadas, como a média, soma, contagem
 049) Qual é a outra função de agregação do pandas utilizado junto com o groupby para saber a quantidade?	df.groupby(by = ["coluna_1", "coluna_2"]).size()
+050) É possível utilizar o método plot() em um dataframe ou series do pandas para gerar um gráfico rápido, explique quais são os tipos de gráficos que podem ser gerados?	bar <br> barh <br> hist # Você pode passar um parâmetro chamado 'bins' <br> kde = density <br> box <br> scatter # Você passar o nome da coluna no x e no y <br> hexbin # Você passar o nome da coluna no x e no y <br> line <br> pie # Você pode passar autopct='%1.1f%% <br> area
+051) Como remover linhas de um dataframe que contenha pelo menos um valor nulo?	df.dropna()
+052) Como obter as linhas de um dataframe que são duplicadas?	df.duplicated()
+053) Como saber a quantidade total e a média das linhas duplicadas de um dataframe?	df.duplicated().sum() <br> df.duplicated().mean()
+054) Como obter um dataframe com apenas as linhas duplicadas?	df[df.duplicated()]
+055) Como obter um dataframe sem as linhas duplicadas?	df[~df.duplicated()] <br> df.drop_duplicates(keep = 'first', inplace = True) # Por padrão, quando as linhas duplicadas são removidas, é mantida a primeira ocorrência <br> df.drop_duplicates(keep='last', inplace = True) # Você também pode manter somente a última ocorrência <br> df.drop_duplicates(keep = False, inplace = True) # Você pode remover todas as linhas que são duplicadas
+056) Como remover as linhas duplicadas considerando uma ou mais colunas específicas de um dataframe?	df.drop_duplicates(subset = ['coluna_1', 'coluna_2'])
+057) Como transformar uma ou mais colunas de um dataframe do pandas para um array do numpy?	df[["coluna_1", "coluna_2"]].values <br> df[["coluna_1", "coluna_2"]].to_numpy()
+058) Como transformar uma coluna de um dataframe para o índice?	df.set_index(keys = "coluna_x", inplace = True)
+059) Como fazer com que as linhas de uma ou mais colunas de um dataframe do pandas sejam deslocadas para frente ou para trás?	df[["coluna_1", "coluna_2"]].shift(periods = 1)
