@@ -3,7 +3,7 @@
 003) Como verificar se um arquivo ou pasta existe?	os.path.exists(novo_diretorio)
 004) Como criar um novo diretório?	os.mkdir(novo_diretorio)
 005) Como renomear um diretório usando a biblioteca os?	os.rename(nome_antigo, nome_novo)
-006) Como remover uma pasta vazia?	os.rmdir(diretorio) <br><br> O diretório precisa estar vazio
+006) Como remover uma pasta vazia com a biblioteca os?	os.rmdir(diretorio) <br><br> O diretório precisa estar vazio
 007) Como remover um arquivo usando a biblioteca os?	os.remove(diretorio_arquivo)
 008) Como obter o caminho absoluto de um arquivo?	os.path.abspath(caminho_relativo)
 009) Como dividir em caminho do diretório e arquivo?	diretorio, arquivo = os.path.split(caminho_absoluto)
@@ -11,6 +11,6 @@
 011) Como obter o tamanho em bytes de um arquivo com a biblioteca os?	os.path.getsize(arquivo)
 012) Como verificar se um diretório é uma pasta?	os.path.isdir(caminho_item)
 013) Como verificar se um diretório é um arquivo?	os.path.isfile(caminho_item)
-014) Com remover uma pasta que contém itens?	import shutil <br> shutil.rmtree(diretorio_pasta)
+014) Com remover uma pasta que contém itens com a biblioteca shutil?	import shutil <br> shutil.rmtree(diretorio_pasta)
 015) Como obter os caminhos das pastas e subspastas com base em um diretório, além de seus arquivos internos?	dirpath, dirnames, filenames = os.walk()
 016) Como retornar o último elemento do caminho de um diretório com a biblioteca os?	os.path.basename()

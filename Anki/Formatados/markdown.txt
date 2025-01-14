@@ -1,0 +1,71 @@
+Como colocar links no formato markdown? [Nome que aparecerá do link](https://seulink.com.br)
+
+Como colocar uma imagem no formato markdown? ![](images_markdown\numpy_image.png) <br><br> É interessante que o caminho relativo para a sua imagem não possua espaço, acentuação ou outros caracteres fora do alfabeto inglês.
+
+Como colocar um texto com uma cor padrão no markdown? <span style = 'color: red'> Cor vermelha </span> <br><br> <span style = 'color: red'> **Cor vermelha** </span>
+
+Como colocar um texto com uma cor e tamanho de fonte customizada no markdown? <span style="color: #4CAF50; font-size: 22px;">Texto Verde Claro</span>
+
+
+Como criar um bloco verde, amarelo, vermelho e azul com texto dentro no markdown? 
+
+<div class = 'alert alert-block alert-success'>
+     <b>Sucesso</b>: Este bloco é verde.
+</div>
+
+<div class = 'alert alert-block alert-warning'>
+     <b>Aviso</b>: Este bloco é amarelo.
+</div>
+
+<div class = 'alert alert-block alert-danger'>
+     <b>Perigo</b>: Este bloco é vermelho.
+</div>
+
+<div class = 'alert alert-block alert-info'>
+     <b>Informação</b>: Este bloco é azul.
+</div>
+
+Como criar títulos no markdown?
+
+# Título 1
+## Título 2
+### Título 3
+#### Título 4
+##### Título 5
+###### Título 6
+
+Como criar um texto em negrito no markdown? **This is bold text**
+Como criar um texto sublinhado no markdown? <u>Esse é um texto sublinhado</u>
+Como criar um texto em itálico no markdown? _This text is italicized_
+Como criar um texto com um risco no meio no markdown? ~~This was mistaken text~~
+Como criar um texto subscrito no markdown? This is a <sub>subscript</sub> text
+Como criar um texto sobrescrito no markdown? This is a <sup>superscript</sup> text
+Como criar um destaque com uma caixa de fundo em um texto no markdown? `Você também pode usar a crase`
+
+
+Como criar uma texto de citação no markdown? > Text that is a quote
+
+Como criar uma lista não ordenada no markdown?
+
+* 1º forma
+* 1º forma
++ 2º forma
++ 2º forma
+- 3º forma
+- 3º forma
+
+Como criar uma lista ordenada no markdown?
+
+1. James Madison
+2. James Monroe
+3. John Quincy Adams
+
+Como criar uma lista não ordenada dentro de outra não ordenada no markdown?
+
+1. First list item
+   - First nested list item
+     - Second nested list item
+
+Como colocar um texto no formato latex no markdown? $\latex$
+
+Como pular linha no texto markdown? Com uma linha em branco <br><br> ou usando o comando br do HTML
