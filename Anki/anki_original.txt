@@ -1,5 +1,2 @@
-Como criar uma pasta zip usando comandos linux, de modo que os arquivos respeitem a sua estrutura original de seu caminho? !zip -r nome_pasta.zip arquivo_pasta_1 arquivo_pasta_2 arquivo_pasta_n
-Como criar uma pasta zip usando comandos linux, de modo que apenas os arquivos ou pastas estejam na pasta zipada sem seus caminhos originais? !zip -j nome_pasta.zip arquivo_pasta_1 arquivo_pasta_2 arquivo_pasta_n
-Qual o comando linux para extrair uma pasta zip de um diretório para outro?	!unzip -o /content/meu_arquivo.zip -d /content/minha_pasta_extraida <br><br> -o: Sobrescreve arquivos existentes, se necessário. <br> -d: Especifica o diretório de destino. No exemplo, o arquivo será extraído para /content/.
-Como entrar em uma determinada pasta usando comando linux? cd nome_da_pasta <br><br> Você pode usar as primeiras letras da pasta, apertar TAB que ele completará
-Como voltar uma pasta de um determinado diretório usando comando linux? cd ..
+Como instalar o scikit-learn? !pip install -U scikit-learn
+Como usar o train_test_split? from sklearn.model_selection import train_test_split <br> X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, stratify = y, random_state = 42) <br><br> Você pode usar o pd.cut() para alguma coluna numérica específica e criar intervalos para tais valores, e usar essa nova coluna de intervalos para a estratificação

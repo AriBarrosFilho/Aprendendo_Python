@@ -73,7 +73,7 @@
 073) O que é o conjugado de um número complexo e como tê-lo no python?	O conjugado de um número complexo é obtido alterando o sinal da parte imaginária do número. <br><br> numero_complexo.conjugate()
 074) Como calcular um número elevado a outro no python?	x ** y <br> pow(x, y)
 075) Como arredondar um número no python?	round(numero, quantidade de casas decimais) <br><br> Se o segundo parâmetro não for preenchido, então o número será arredondado para um inteiro mais próximo
-076) Como criar um dicinário com base em duas lista, uma contendo as chaves e a outra os valores?	dicionario = dict(zip(lista_1, lista_2))
+076) Como criar um dicionário com base em duas lista, uma contendo as chaves e a outra os valores?	dicionario = dict(zip(lista_1, lista_2))
 077) Quais são as formas de retornar um valor de uma determinada chave de um dicionário no python?	dicionario[chave] # Dá erro caso não ache a chave <br> dicionario.get() # Retorna None caso não ache a chave
 078) Como verificar se há uma chave no dicionário no python?	chave in dicionario
 079) Como retornar o par de chaves e valores em um dicionário no python?	dicionario.items()
@@ -118,3 +118,4 @@
 118) Como criar um dicionário considerando que todas as chaves possuam o mesmo valor inicial?	chaves = ['x', 'y', 'z'] <br> valores_padrao = 0 <br> dicionario = dict.fromkeys(chaves, valores_padrao)
 119) Como realizar a transposição, isto é, linhas se tornam colunas em uma lista de listas no python, considerando que todas as listas apresentam comprimentos iguais?	list(map(list, zip(*lista_tuplas)))
 120) Como realizar a transposição, isto é, linhas se tornam colunas em uma lista de listas no python, considerando que todas as listas apresentam comprimentos diferentes?	from itertools import zip_longest <br> list(map(list, zip_longest(*lista_tuplas, fillvalue = None)))
+121) Como criar um número infinito no python?	float("inf")

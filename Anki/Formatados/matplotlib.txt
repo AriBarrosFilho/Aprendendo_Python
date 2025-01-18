@@ -19,3 +19,12 @@ plt.grid(True, axis = "both", alpha = 0.2, ls = ":")  # Exibir a grade
 
 # Exibir o gráfico
 plt.show()
+
+xlim = (valor_minimo, valor_maximo) <br> [valor_minimo, valor_maximo]
+ylim = (valor_minimo, valor_maximo) <br> [valor_minimo, valor_maximo]
+
+xticks = np.arange(0, 100, 5)
+yticks = np.arange(0, 100, 5)
+
+xlabel = "Título para o eixo x"
+ylabel = "Título para o eixo y"
