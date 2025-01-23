@@ -6,7 +6,7 @@
 006) Como mostrar o caminho completo do diretório atual através de um comando linux?	pwd
 007) Como mostar todos os arquivos e pastas do diretório atual através de um comando linux?	dir <br><br> ls <br><br> ls -l <br> Apresenta os arquivos e pastas de forma detalhada <br><br> ls -a <br> Apresenta os arquivos e pastas ocultos <br><br> ls -la <br> Apresenta todos os arquivos e pastas até mesmo os ocultos de forma detalhada
 008) Qual o comando linux para ir para o diretório inicial?	cd ~
-009) Qual o operador para concatenar comandos linux?	&
+009) Qual o operador para concatenar comandos linux?	& ou &&
 010) Qual o operador para executar comandos linux em células de notebook?	!
 011) Como criar um arquivo vazio no linux?	touch arquivo.txt
 012) Como criar pastas através de comandos linux?	mkdir novo_diretorio <br><br> mkdir -p pasta/subpasta  # Cria diretórios em cascata
