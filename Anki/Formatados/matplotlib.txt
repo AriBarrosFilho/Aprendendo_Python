@@ -1,15 +1,18 @@
 001) Como importar a biblioteca do matplotlib?	import matplotlib.pyplot as plt
 002) Como colocar grades em um gráfico no matplotlib?	<br><br> plt.grid(axis = 'both', alpha = 0.3, linestyle = "--", , linewidth = 2) # axis = 'x', 'y', 'both'
-003) Como colocar um título para um gráfico do matplotlib?	plt.title('Histograma dos Valores Ajustados', fontsize = 16, fontweight = "bold")
-004) Como colocar uma legenda no eixo x e y em um gráfico do matplotlib?	plt.xlabel(xlabel = 'Valores', fontsize = 14) <br> plt.ylabel(ylabel = 'Frequência', fontsize = 14)
+003) Como colocar um título para um gráfico do matplotlib?	plt.title(label = 'Histograma dos Valores Ajustados', fontsize = 16, fontweight = "bold")
+004) Como colocar uma legenda no eixo x e y em um gráfico do matplotlib?	plt.xlabel(xlabel = 'Valores', fontsize = 14, fontweight = "bold") <br> plt.ylabel(ylabel = 'Frequência', fontsize = 14, fontweight = "bold")
 005) Quais são os tipos de linestyle do matplotlib?	"-", "--", "-.", ":", " ", ""
-006) Quais são os tipos de markerstyle do matplotlib?	'.', 'o', 'v', '^', '<', '>', '8', 's', 'p', '*', 'h', 'H', 'D', 'd', 'P', 'X'
-007) Crie um gráfico de linha através do matplotlib, explorando os marcadores, rótulos, cores, estilos de linhas, transparência e rótulos?	plt.plot(dias_da_semana, vendas, marker = "+", label = "Vendas Loja 1", alpha = 0.1, color = "k", linestyle = "-", linewidth = 0.5, fontweight = "bold")
+006) Quais são os tipos de markerstyle do matplotlib?	'.', 'o', 'v', '^', '<', '>', '8', 's', '*', 'd', 'D', 'h', 'H', 'p', 'P', 'x', 'X'
+007) Crie um gráfico de linha através do matplotlib, explorando os marcadores, cores, estilos de linhas, transparência e rótulos?	plt.plot(dias_da_semana, vendas, marker = "+", label = "Vendas Loja 1", alpha = 0.1, color = "k", linestyle = "-", linewidth = 0.5, fontweight = "bold")
 008) Como definir a graduação dos eixos x e y de um gráfico do matplotlib?	plt.xticks(ticks = np.arange(0, 11.6, 0.5)) <br> plt.yticks(ticks = np.arange(0, 11.6, 0.5))
-009) Como definir os limites máximos e mínimos dos eixos x e y?	plt.xlim(3, 12) <br> plt.xlim(top = 12) <br> plt.xlim(bottom = 3) <br><br> plt.ylim(3, 12) <br> plt.ylim(top = 12) <br> plt.ylim(bottom = 3) <br><br> plt.axis([0, 31, 0, 10.5])
-010) Como habilitar as legendas do gráfico de linhas?	plt.legend() # É necessário que haja o 'label' no plt.plot()
+009) Como definir os limites máximos e mínimos dos eixos x e y?	plt.xlim(3, 12) <br> plt.xlim(left = 12) <br> plt.xlim(right = 3) <br><br> plt.ylim(3, 12) <br> plt.ylim(top = 12) <br> plt.ylim(bottom = 3) <br><br> plt.axis([0, 31, 0, 10.5])
+010) Como habilitar as legendas do gráfico de linhas?	plt.legend(loc = "best") # É necessário que haja o 'label' no plt.plot()
 011) Como adicionar um texto específico em uma parte específica do gráfico?	plt.text(x = 1, y = 5, s = r'$\mu=100,\ \sigma=15$', fontsize = 15, fontweight = "bold")
-012) Como criar um gráfico de barras vertical e horizontal no matplotlib e também colocar os números das respectivas barras junto com as mesmas?	barras = plt.bar(nomes, vendas, color = ["#f2a7cd", "#a7cd84", "#f2a7cd"], alpha = 1.0) <br> plt.bar_label(barras, labels = vendas, label_type = "edge", padding = 3, fontsize = 11, fontweight = "bold") # label_type = "center"
+012) Como criar um gráfico de barras vertical e horizontal no matplotlib e também colocar os números das respectivas barras junto com as mesmas?	barras = plt.bar(nomes, vendas, color = ["#f2a7cd", "#a7cd84", "#f2a7cd"], alpha = 1.0, height = 0.8) <br> plt.bar_label(barras, labels = vendas, label_type = "edge", padding = 3, fontsize = 11, fontweight = "bold") # label_type = "center"
 013) Como criar um gráfico de pontos no matplotlib?	plt.scatter(x, y, color = "r", marker = "^", alpha = 0.7)
 014) Como criar um gráfico de histograma no matplotlib?	plt.hist(dados, bins = 30, alpha = 0.5, color= 'g')
-015) Como criar um gráfico de pizza no matplotlib?	plt.pie(sizes, labels = labels, autopct = '%1.1f%%', startangle = 10)
+015) Como criar um gráfico de pizza no matplotlib?	plt.pie(x = x = df.cidade.value_counts(), labels = x = df.cidade.value_counts().index, autopct = '%1.1f%%', counterclock= False, startangle = 90, colors = lista_cores, radius = 2, pctdistance = 0.4, labeldistance = 1)
+016) Como criar uma linha vertical em um gráfico do matplotlib?	lt.axvline(x = -np.pi/2, color='r', linestyle = '--', label = r'$\frac{-\pi}{2}$')
+017) Como criar uma linha horizontal em um gráfico do matplotlib?	plt.axhline(y = 0, color='k', linestyle = '--', label = '0')
+018) Quais são as opções para o parâmetro loc do método plt.legend() do matplotlib?	best <br> upper right <br> upper left <br> lower right <br> lower left <br> center right <br> center left <br> lower center <br> upper center <br> center

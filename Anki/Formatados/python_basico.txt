@@ -85,7 +85,7 @@
 085) Como transformar um inteiro no python para a sua forma binária?	bin(x) <br><br> bin(x)[2:] <br><br> bin(x)[:2].zfill(8)
 086) Considerando que x e y são números inteiros no python, explique as operações x & y, x | y?	x & y # Fazem a operação AND bit a bit (bitwise) <br><br> x | y # Fazem a operação OR bit a bit (bitwise)
 087) Como fazer a operação xor e not em um número binário no python?	x ^ y, ~x
-088) Como completar um texto no python com zeros a esquersa?	texto.zfill(10)
+088) Como completar um texto no python com zeros a esquerda?	texto.zfill(10)
 089) Como usar a notação científica no python?	1.2E3 ou 1.2e3
 090) Como usar o match case no python?	
 091) Como funciona a variável global no python?	

@@ -1,3 +1,3 @@
-001) Como deletar um arquivo ou pasta, mesmo que a pasta não esteja vazia utilizando o shutil?  shutil.rmtree(caminho)
+001) Como deletar um arquivo ou pasta, mesmo que a pasta não esteja vazia utilizando o shutil?	shutil.rmtree(caminho)
 002) Como copiar um arquivo usando shutil?	shutil.copy(src = "Biblioteca time.ipynb", dst = "images_markdown") <br><br> A pasta de destino já precisa existir
-003) Como copiar os arquivos e pastas de uma pasta usando shutil?	shutil.copytree(src = r"origem", dst = "destino") <br><br> A pasta de destino não pode existir
+003) Como copiar uma pasta com seus arquivos usando shutil?	shutil.copytree(src = r"origem", dst = "destino") <br><br> A pasta de destino não pode existir

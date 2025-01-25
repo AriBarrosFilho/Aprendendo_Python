@@ -82,7 +82,7 @@
 082) Como calcular a amplitude de um array usando numpy, isto é, a diferença entre o valor máximo e mínimo?	np.ptp()
 083) Com base em um array do tipo float, como obter o maior e menor inteiro mais próximo?	np.ceil() <br> np.floor()
 084) Como criar um polinômio com o numpy?	np.poly1d([1, -2, 2], variable = "x")
-085) Como obter as raízes de um polinômio com o numpy?	np.poly1d([1, -2, 2], variable = "x").r <br> np.poly1d([1, -2, 2], variable = "x").r
+085) Como obter as raízes de um polinômio com o numpy?	np.poly1d([1, -2, 2], variable = "x").r <br> np.poly1d([1, -2, 2], variable = "x").roots
 086) Com base em um polinômio usando numpy, como obter o resultado aplicando um determinado valor ao x?	np.poly1d([1, -2, 2], variable = "x")(3) <br><br> np.polyval([1, -2, 2], 3)
 087) Como derivar e integrar um polinômio no numpy?	np.poly1d([1, -2, 2]).deriv() <br><br> np.poly1d([1, -2, 2]).integ()
 088) Como criar um polinômio que melhor se ajusta aos dados no numpy?	np.polyfit(x = np.sort(x), y = np.sort(y), deg = 2)
