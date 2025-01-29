@@ -93,3 +93,4 @@
 093) Considerando uma coluna de datas de um dataframe, como saber a quantidade de dias totais daquele determinado mês, se é início e fim de mês e se é início ou fim de ano?	df["data"].dt.days_in_month <br> df["data"].dt.is_month_start <br> df["data"].dt.is_month_end <br> df["data"].dt.is_year_start <br> df["data"].dt.is_year_end
 094) Em um dataframe que possui datas, como filtrar as linhas que contenham dias úteis e finais de semana?	df[~df.data.dt.day_name().isin(["Saturaday", "Sunday"])] <br> df[df.data.dt.day_name().isin(["Saturaday", "Sunday"])]
 095) Considerando um dataframe com datas, como filtrar as linhas que estão em uma faixa de até 3 meses em relação ao dia atual?	df[(df.data >= pd.to_datetime("today") - pd.DateOffset(months = 3)) & (df.data <= pd.to_datetime("today"))]
+096) Como obter apenas o valor de um tipo series?	ser[2] <br> ser.iloc[2] <br> ser.loc[2]

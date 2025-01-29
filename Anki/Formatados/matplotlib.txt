@@ -10,9 +10,13 @@
 010) Como habilitar as legendas do gráfico de linhas?	plt.legend(loc = "best") # É necessário que haja o 'label' no plt.plot()
 011) Como adicionar um texto específico em uma parte específica do gráfico?	plt.text(x = 1, y = 5, s = r'$\mu=100,\ \sigma=15$', fontsize = 15, fontweight = "bold")
 012) Como criar um gráfico de barras vertical e horizontal no matplotlib e também colocar os números das respectivas barras junto com as mesmas?	barras = plt.bar(nomes, vendas, color = ["#f2a7cd", "#a7cd84", "#f2a7cd"], alpha = 1.0, height = 0.8) <br> plt.bar_label(barras, labels = vendas, label_type = "edge", padding = 3, fontsize = 11, fontweight = "bold") # label_type = "center"
-013) Como criar um gráfico de pontos no matplotlib?	plt.scatter(x, y, color = "r", marker = "^", alpha = 0.7)
+013) Como criar um gráfico de pontos no matplotlib?	plt.scatter(x, y, color = "r", marker = "^", alpha = 0.7, s = 20, c = y, cmap = "RdYlGn")
 014) Como criar um gráfico de histograma no matplotlib?	plt.hist(dados, bins = 30, alpha = 0.5, color= 'g')
-015) Como criar um gráfico de pizza no matplotlib?	plt.pie(x = x = df.cidade.value_counts(), labels = x = df.cidade.value_counts().index, autopct = '%1.1f%%', counterclock= False, startangle = 90, colors = lista_cores, radius = 2, pctdistance = 0.4, labeldistance = 1)
-016) Como criar uma linha vertical em um gráfico do matplotlib?	lt.axvline(x = -np.pi/2, color='r', linestyle = '--', label = r'$\frac{-\pi}{2}$')
-017) Como criar uma linha horizontal em um gráfico do matplotlib?	plt.axhline(y = 0, color='k', linestyle = '--', label = '0')
+015) Como criar um gráfico de pizza no matplotlib?	plt.pie(x = df.cidade.value_counts(), labels = df.cidade.value_counts().index, autopct = '%1.1f%%', explode = [0.1, 0, 0, 0], colors = ["#f2a7cd", "#a7cd84", "#f2a7cd", "#f2a7cd"], counterclock= False, startangle = 90, colors = lista_cores, radius = 2, pctdistance = 0.4, labeldistance = 1)
+016) Como criar uma linha vertical em um gráfico do matplotlib?	plt.axvline(x = -np.pi/2, color='r', linestyle = '--', label = r'$\frac{-\pi}{2}$')
+017) Como criar uma linha horizontal em um gráfico do matplotlib?	plt.axhline(y = 0, color = 'k', linestyle = '--', label = '0')
 018) Quais são as opções para o parâmetro loc do método plt.legend() do matplotlib?	best <br> upper right <br> upper left <br> lower right <br> lower left <br> center right <br> center left <br> lower center <br> upper center <br> center
+019) Considerando os dados abaixo, crie um gráfico de barras empilhado com o matplotlib <br><br> anos = np.arange(2019, 2024, 1) <br> vendas_online = np.linspace(5, 20, 5) <br> venda_loja = np.linspace(8, 2, 5) <br><br>?	plt.bar(anos, vendas_online, label = "Online") <br> plt.bar(anos, vendas_loja, label = "Física", bottom = vendas_online) <br> plt.xticks = (ticks = anos, labels = ["Ano 1", "Ano 2", "Ano 3", "Ano 4", "Ano 5"]) <br> plt.legend() <br> plt.show()
+020) Como alterar o tamanho do gráfico no matplotlib?	plt.figure(figsize = (15, 5))
+021) Qual o parâmetro no matplotlib para alterar a rotação do textos em legendas?	plt.xticks(rotation = 45)
+022) Como criar uma barra lateral em um gráfico do matplotlib indicando uma barra com o degradê das cores e os respectivos valores?	plt.colorbar(ticks = np.arange(0, 11, 1))

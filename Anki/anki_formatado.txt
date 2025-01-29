@@ -1,20 +1,3 @@
-001) Como criar uma pasta zip usando comandos linux, de modo que os arquivos respeitem a sua estrutura original de seu caminho?	!zip -r nome_pasta.zip arquivo_pasta_1 arquivo_pasta_2 arquivo_pasta_n
-002) Como criar uma pasta zip usando comandos linux, de modo que apenas os arquivos ou pastas estejam na pasta zipada sem seus caminhos originais?	!zip -j nome_pasta.zip arquivo_pasta_1 arquivo_pasta_2 arquivo_pasta_n
-003) Qual o comando linux para extrair uma pasta zip de um diretório para outro?	!unzip -o /content/meu_arquivo.zip -d /content/minha_pasta_extraida <br><br> -o Sobrescreve arquivos existentes, se necessário. <br> -d Especifica o diretório de destino. No exemplo, o arquivo será extraído para /content/.
-004) Como entrar em uma determinada pasta usando comando linux?	cd nome_da_pasta <br><br> Você pode usar as primeiras letras da pasta, apertar TAB que ele completará
-005) Como voltar uma pasta de um determinado diretório usando comando linux?	cd ..
-006) Como mostrar o caminho completo do diretório atual através de um comando linux?	pwd
-007) Como mostar todos os arquivos e pastas do diretório atual através de um comando linux?	dir <br><br> ls <br><br> ls -l <br> Apresenta os arquivos e pastas de forma detalhada <br><br> ls -a <br> Apresenta os arquivos e pastas ocultos <br><br> ls -la <br> Apresenta todos os arquivos e pastas até mesmo os ocultos de forma detalhada
-008) Qual o comando linux para ir para o diretório inicial?	cd ~
-009) Qual o operador para concatenar comandos linux?	&&
-010) Qual o operador para executar comandos linux em células de notebook?	!
-011) Como criar um arquivo vazio no linux?	touch arquivo.txt
-012) Como criar pastas através de comandos linux?	mkdir novo_diretorio <br><br> mkdir -p pasta/subpasta  # Cria diretórios em cascata
-013) Como copiar arquivos e pastas de uma origem para um destino usando comandos linux?	cp -r arquivo1 pasta1 arquivo2 pasta2 pasta_destino # A última pasta sempre será a pasta destino que receberá as cópias
-014) Qual o comando linux para remover uma ou mais pastas e arquivos?	!rm -rf arquivo1 pasta1 arquivo2 pasta2 # -r (Faz de forma recursica, isto é, deleta todos os subitens de uma pasta), -f (Deleta de forma forçada)
-015) Caso o caminho de uma pasta ou arquivo possua um espaço, como corrigir para que qualquer comando linux que use tal caminho não apresente nenhum problema?	Substitual o espaço por contra-barra e esse espaço, veja o exemplo abaixo. <br><br> nova pasta/arquivo .txt <br> nova\ pasta/arquivo.txt
-016) Como renomear um arquivo ou pasta com comandos linux?	mv arquivo.txt novo_arquivo.txt
-017) Como mover uma ou mais pastas e arquivos para um determinado destino com comandos linux?	mv -v pasta1 pasta2 pasta3 arquivo1 arquivo2 /home/usuario/destino/ # Adicionar a opção -v (verbose) Para ver detalhes da operação.
-018) Como mostar o conteúdo de um arquivo usando comandos linux?	cat arquivo.txt <br><br> less arquivo_grande.txt
-019) Como limpar o terminal usando comando linux?	clear
-020) Como mostar as primeiras e últimas linhas de um arquivo com comandos linux?	head -n 10 arquivo.txt  # Primeiras 10 linhas <br><br> tail -n 20 log.txt  # Últimas 20 linhas <br><br> tail -f log.txt     # Segue o arquivo em tempo real
+001) Como instalar o scikit-learn?	!pip install -U scikit-learn
+002) Como usar o train_test_split?	from sklearn.model_selection import train_test_split <br> X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, stratify = y, random_state = 42) <br><br> Você pode usar o pd.cut() para alguma coluna numérica específica e criar intervalos para tais valores, e usar essa nova coluna de intervalos para a estratificação
+003) Como estratificar os dados com base em mais de uma coluna de um dataframe do pandas e usando train_test_split?	data['stratify_col'] = data['class1'].astype(str) + "_" + data['class2']
