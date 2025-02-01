@@ -86,3 +86,5 @@
 086) Com base em um polinômio usando numpy, como obter o resultado aplicando um determinado valor ao x?	np.poly1d([1, -2, 2], variable = "x")(3) <br><br> np.polyval([1, -2, 2], 3)
 087) Como derivar e integrar um polinômio no numpy?	np.poly1d([1, -2, 2]).deriv() <br><br> np.poly1d([1, -2, 2]).integ()
 088) Como criar um polinômio que melhor se ajusta aos dados no numpy?	np.polyfit(x = np.sort(x), y = np.sort(y), deg = 2)
+089) Como criar um array no numpy com valores aleatórios com distribuição normal e você determinando a média e o desvio padrão?	rng = np.random.default_rng(seed = None) <br> rng.normal(loc = 50, scale = 20, size = 10) <br><br> np.random.normal(loc = 50, scale = 20, size = 10)
+090) Em uma função, como usar o type hint para um parâmetro de entrada ou saída do tipo numpy?	np.ndarray

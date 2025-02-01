@@ -94,3 +94,4 @@
 094) Em um dataframe que possui datas, como filtrar as linhas que contenham dias úteis e finais de semana?	df[~df.data.dt.day_name().isin(["Saturaday", "Sunday"])] <br> df[df.data.dt.day_name().isin(["Saturaday", "Sunday"])]
 095) Considerando um dataframe com datas, como filtrar as linhas que estão em uma faixa de até 3 meses em relação ao dia atual?	df[(df.data >= pd.to_datetime("today") - pd.DateOffset(months = 3)) & (df.data <= pd.to_datetime("today"))]
 096) Como obter apenas o valor de um tipo series?	ser[2] <br> ser.iloc[2] <br> ser.loc[2]
+097) Em uma função, como usar o type hint para um parâmetro de entrada ou saída do tipo pandas?	from typing import Union <br> Union[pd.DataFrame, pd.Series] # Para versões antes do python 3.10 <br><br> pd.DataFrame | pd.Series # Para versões mais recentes (Python 3.10 ou superior)
