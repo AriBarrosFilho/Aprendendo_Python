@@ -1,6 +1,6 @@
 001) Como importar a biblioteca do matplotlib?	import matplotlib.pyplot as plt
 002) Como colocar grades em um gráfico no matplotlib?	<br><br> plt.grid(axis = 'both', alpha = 0.3, linestyle = "--", , linewidth = 2) # axis = 'x', 'y', 'both'
-003) Como colocar um título para um gráfico do matplotlib?	plt.title(label = 'Histograma dos Valores Ajustados', fontsize = 16, fontweight = "bold", loc = "center") # loc: "left", "center", "right"
+003) Como colocar um título para um gráfico do matplotlib?	plt.title(label = 'Histograma dos Valores Ajustados', fontsize = 16, fontweight = "bold", loc = "center", y = 1.5) # loc: "left", "center", "right"
 004) Como colocar uma legenda no eixo x e y em um gráfico do matplotlib?	plt.xlabel(xlabel = 'Valores', fontsize = 14, fontweight = "bold") <br> plt.ylabel(ylabel = 'Frequência', fontsize = 14, fontweight = "bold")
 005) Quais são os tipos de linestyle do matplotlib?	"-", "--", "-.", ":", " ", ""
 006) Quais são os tipos de markerstyle do matplotlib?	'.', 'o', 'v', '^', '<', '>', '8', 's', '*', 'd', 'D', 'h', 'H', 'p', 'P', 'x', 'X'
@@ -21,7 +21,7 @@
 021) Qual o parâmetro no matplotlib para alterar a rotação do textos em legendas?	plt.xticks(rotation = 45)
 022) Como criar uma barra lateral em um gráfico do matplotlib indicando uma barra com o degradê das cores e os respectivos valores?	plt.colorbar(ticks = np.arange(0, 11, 1))
 023) Como criar uma anotação simples com uma seta em um determinado ponto de um gráfico no matplotlib?	plt.annotate(text = "Menor valor", color = "r", xy = (posicao_x, y), xytext = (posicao_x - 0.5, y), va='bottom', ha = "right", arrowprops = dict(facecolor = "r", shrink = 100))
-024) Como remover a o retângulo preto que é a borda de um gráfico do matplotlib?	plt.box(on = False)
+024) Como remover o retângulo preto que é a borda de um gráfico do matplotlib?	plt.box(on = False)
 025) Como remover aqueles tracinhos dos ticks de um determinado eixo de um gráfico do matplotlib?	plt.tick_params(axis = "x", length = 0) # axis = "x", "y", "both"
 026) Como remover os valores de ticks de um determinado eixo de um gráfico de matplotlib?	plt.xticks(ticks = []) <br> plt.yticks(ticks = [])
 027) Em um gráfico de linhas do matplotlib, como faço para colocar o valor de cada ponto, isto é, um texto com o respectivo valor do y ao lado do seu marker?	for i, venda in enumerate(dicionario_dados["vendas"]): plt.annotate(text = venda, xy = (dicionario_dados["data"][i], venda), xytext = (5, -3), textcoords = "offset points")
@@ -32,4 +32,4 @@
 032) Como definir a cor e a transparência de cada barra de forma individual de um gráfico de barras do matplotlib, considerando um certo filtro, por exemplo, uma cor diferente para a menor e a maior barra enquanto todas as outras possuem a mesma cor?	for i, barra in enumerate(barras): <br> if quantidade[i] == np.max(quantidade): <br> barras[i].set_color(cor_alta) <br> barras[i].set_alpha(1)
 033) Como inverter um determinado eixo de um gráfico do matplotlib?	plt.gca().invert_xaxis() <br> plt.gca().invert_yaxis()
 034) Como salvar um gráfico do matplotlib?	plt.savefig(fname = "imagem.png", bbox_inches = "tight", dpi = 300)
-035) Como alterar a cor dos ticks de um determinado eixo de um gráfico do matplotlib?	ax.tick_params(axis = "y", labelcolor = "red")
+035) Como alterar a cor dos ticks de um determinado eixo de um gráfico do matplotlib?	ax.tick_params(axis = "y", labelcolor = "red") <br><br> plt.xticks(color = "r") <br> plt.yticks(color = "r")
