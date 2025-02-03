@@ -3,6 +3,6 @@
 003) Como saber as versões de python instalados pelo pyenv?	pyenv versions
 004) Como instalar uma versão específica do python com o pyenv? pyenv install 3.10.12
 005) O que é o pyenv?	É uma biblioteca capaz de gerenciar a versão do python para cada projeto
-006) Como saber as versões de python disponíveis?	pyenv install --list
+006) Como saber as versões de python disponíveis para serem baixadas com o pyenv?   pyenv install --list
 007) Como definir uma versão global do python com o pyenv?	pyenv global 3.12.1
 008) Como definir uma versão local do python com o pyenv?	pyenv local 3.12.1
