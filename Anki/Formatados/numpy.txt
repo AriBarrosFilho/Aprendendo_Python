@@ -88,3 +88,4 @@
 088) Como criar um polinômio que melhor se ajusta aos dados no numpy?	np.polyfit(x = np.sort(x), y = np.sort(y), deg = 2)
 089) Como criar um array no numpy com valores aleatórios com distribuição normal e você determinando a média e o desvio padrão?	rng = np.random.default_rng(seed = None) <br> rng.normal(loc = 50, scale = 20, size = 10) <br><br> np.random.normal(loc = 50, scale = 20, size = 10)
 090) Em uma função, como usar o type hint para um parâmetro de entrada ou saída do tipo numpy?	np.ndarray
+Como criar uma sequência de números espaçados geometricamente (isto é, em progressão geométrica) usando o numpy? np.geomspace(start = 2, stop = 162, num = 5, endpoint = True, dtype = np.float64) <br> (162 / 2) ** (1/(5 - 1) # Como a razão é calculada

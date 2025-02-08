@@ -69,3 +69,17 @@ Como criar uma lista não ordenada dentro de outra não ordenada no markdown?
 Como colocar um texto no formato latex no markdown? $\latex$
 
 Como pular linha no texto markdown? Com uma linha em branco <br><br> ou usando o comando br do HTML
+
+
+
+**Exercício em sala:** complete a função acima.
+
+<details><summary>Solução</summary>
+
+```python
+def predict(self, X):
+    X = self._add_ones_column(X)
+    y_pred = X @ self.w
+    return y_pred
+```
+</details>
