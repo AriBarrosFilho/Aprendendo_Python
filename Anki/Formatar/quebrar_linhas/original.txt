@@ -1,0 +1,6 @@
+for i, valor in enumerate(y):
+    plt.annotate(text = np.round(a = x[i], decimals = 2), # Define o texto que vai aparecer
+                 xy = (x[i], valor), xycoords = 'data', # Define onde ficaria a ponta da possível seta
+                 xytext = (x[i] + 1, valor), textcoords = 'data', # Define onde vai ficar o texto
+                 bbox = dict(boxstyle = "Square", fc="w", edgecolor = "r", ls = "--"),
+                 arrowprops = dict(arrowstyle = "-|>", connectionstyle = "arc3,rad=-0.1", fc = "k"))

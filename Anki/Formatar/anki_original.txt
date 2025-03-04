@@ -8,4 +8,4 @@
 008) Como personalizar a data e a hora de um objeto datetime?	objeto_datetime.strftime("formato")
 009) Como converter de string para datetime?	string_data = "30 Junho, 2023, 15:30:20"  <br> formato = "%d %B, %Y, %H:%M:%S" <br> data = datetime.strptime(string_data, formato)
 010) Como calcular a diferença de anos, meses,...segundos?	from dateutil.relativedelta import relativedelta  <br> diferenca = relativedelta(datetime_1, datetime_2) <br> diferenca.years, diferenca.months, ...
-011) Com base em um objeto datetime, como substituir o valor do ano, mês, dia, hora, minuto ou segundo por outro valor?	objeto_datetime.replace(day = 10) <br> objeto_datetime.replace(month = 10) # day, month, year, hour, minute, second
+Com base em um objeto datetime, como substituir o valor do ano, mês, dia, hora, minuto ou segundo por outro valor? objeto_datetime.replace(day = 10) <br> objeto_datetime.replace(month = 10) # day, month, year, hour, minute, second

@@ -2,7 +2,7 @@
 002) Como obter a lista de arquivos e pastas de um diretório?	os.listdir(diretorio)
 003) Como verificar se um arquivo ou pasta existe?	os.path.exists(novo_diretorio)
 004) Como criar um novo diretório?	os.mkdir(novo_diretorio)
-005) Como renomear um diretório usando a biblioteca os?	os.rename(nome_antigo, nome_novo)
+005) Como renomear um diretório usando a biblioteca os?	os.rename(src = nome_antigo, dst = nome_novo)
 006) Como remover uma pasta vazia com a biblioteca os?	os.rmdir(diretorio) <br><br> O diretório precisa estar vazio
 007) Como remover um arquivo usando a biblioteca os?	os.remove(diretorio_arquivo)
 008) Como obter o caminho absoluto de um arquivo?	os.path.abspath(caminho_relativo)
