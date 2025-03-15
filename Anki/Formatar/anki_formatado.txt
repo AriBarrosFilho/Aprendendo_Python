@@ -1,11 +1,10 @@
-001) Como obter a data e hora atual usando o datetime?	from datetime import datetime <br> agora = datetime.now() <br><br> data = agora.date() <br> horario = agora.time() <br><br> agora.year <br> agora.month <br> agora.day <br> agora.hour <br> agora.minute <br> agora.second <br> agora.microsecond
-002) Como obter somente a data no datetime (sem o horário)?	from datetime import date <br> agora = date.today()
-003) Como somar ou subtrair datas e horários?	from datetime import timedelta <br> data_horario +- timedelta(days = x) <br> weeks, days, hours, minutes, seconds, microseconds, milliseconds
-004) Como construir um objeto datetime?	datetime(ano, mes, dia, hora, minuto, segundo, microssegundo)
-005) Como colocar uma string no formato datetime utilizando o formato padrão ano-mês-dia?	datetime.fromisoformat("2023-06-26 15:30:20")
-006) Como criar um objeto datetime?	objeto = datetime(ano, mês, dia, hora, minuto, segundo, milissegundos)
-007) Como ordenar uma lista de objetos datetime?	datas_ordenadas = sorted(lista_datetime, reverse = True) => Crescente (padrão) <br><br> datas_ordenadas = sorted(lista_datetime, reverse = False) => decrescente
-008) Como personalizar a data e a hora de um objeto datetime?	objeto_datetime.strftime("formato")
-009) Como converter de string para datetime?	string_data = "30 Junho, 2023, 15:30:20"  <br> formato = "%d %B, %Y, %H:%M:%S" <br> data = datetime.strptime(string_data, formato)
-010) Como calcular a diferença de anos, meses,...segundos?	from dateutil.relativedelta import relativedelta  <br> diferenca = relativedelta(datetime_1, datetime_2) <br> diferenca.years, diferenca.months, ...
-011) Com base em um objeto datetime, como substituir o valor do ano, mês, dia, hora, minuto ou segundo por outro valor?	objeto_datetime.replace(day = 10) <br> objeto_datetime.replace(month = 10) # day, month, year, hour, minute, second
+001) Como retornar um sequência aleatória de x bytes no formato de bytes com o random?	random.randbytes(x)
+002) Para que serve a função random.getstate()?	Retorna uma tupla de dados que foram utilizados para gerar o número aleatório naquele momento.
+003) Para que serve a função random.setstate(state)?	Utiliza os dados de random.getstate() para definir uma semente.
+004) Como criar uma semente para valores aleatórios na biblioteca random?	random.seed() <br><br> Só funciona para a célula atual.
+005) Como misturar os elementos de uma lista com o random?	random.shuffle(lista)
+006) Como gerar valores aleatórios inteiros com o random?	random.randint(a = valor mínimo, b = valor máximo inclusive) <br><br> random.randrange(start = valor mínimo, stop = valor máximo exclusive, step = passo)
+007) Como escolher um elemento aleatório de uma lista usando o random?	random.choice(lista)
+008) Como escolher uma lista de tamanho n, com elementos aleatório de outra lista com reposição?	random.choices(population = lista, k = n) <br><br> weights: É uma lista de mesmo tamanho que a lista base, indicando o peso de cada elemento para ser selecionado
+009) Como escolher uma lista de tamanho n, com elementos aleatório de outra lista sem reposição?	random.sample(population = lista, k = n)
+010) Como gerar valores aleatórios entre 0 e 1 usando random?	random.random()
